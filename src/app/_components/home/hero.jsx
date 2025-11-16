@@ -16,7 +16,7 @@ function Hero() {
           <h1 className="text-white max-laptop:text-[46px] text-6xl font-semibold leading-tight max-sm:text-[28px]">
             Discover Your Dream Property with Estatein
           </h1>
-          <p className="text-gray-09 font-medium text-lg max-laptop:text-[16px] max-sm:text-sm">
+          <p className="gray_text">
             Your journey to finding the perfect property begins here. Explore
             our listings to find the home that matches your dreams.
           </p>

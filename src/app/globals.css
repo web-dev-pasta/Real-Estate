@@ -11,6 +11,14 @@
   --color-gray-09: #999999;
   --color-purple-60: #703bf7;
   --breakpoint-laptop: 1441px;
+  --breakpoint-large: 1650px;
   --breakpoint-small-mobile: 380px;
+  --breakpoint-tiny-mobile: 400px;
   --max-width-container: 1596px;
+}
+
+@layer components {
+  .gray_text {
+    @apply text-gray-09 font-medium text-lg max-laptop:text-[16px] max-sm:text-sm;
+  }
 }

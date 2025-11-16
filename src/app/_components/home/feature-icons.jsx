@@ -1,8 +1,8 @@
 import FeatureBox from "@/components/feature-box";
-import iconOne from "../../../../public/assets/images/icon-1.svg";
-import iconTwo from "../../../../public/assets/images/icon-2.svg";
-import iconThree from "../../../../public/assets/images/icon-3.svg";
-import iconFour from "../../../../public/assets/images/icon-4.svg";
+import iconOne from "@/../public/assets/images/icon-1.svg";
+import iconTwo from "@/../public/assets/images/icon-2.svg";
+import iconThree from "@/../public/assets/images/icon-3.svg";
+import iconFour from "@/../public/assets/images/icon-4.svg";
 function FeatureIconsSection() {
   const features = [
     {

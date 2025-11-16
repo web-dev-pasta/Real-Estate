@@ -1,4 +1,7 @@
-import FeatureIconsSection from "./feature-icons-section";
+import AskedQuestions from "./asked-questions";
+import Clients from "./clients";
+import FeatureIconsSection from "./feature-icons";
+import FeatureProperties from "./feature-properties";
 import Hero from "./hero";
 
 function Home() {
@@ -6,6 +9,9 @@ function Home() {
     <>
       <Hero />
       <FeatureIconsSection />
+      <FeatureProperties />
+      <Clients />
+      <AskedQuestions />
     </>
   );
 }

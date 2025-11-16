@@ -1,5 +1,5 @@
 import Image from "next/image";
-import topRightArrow from "../../public/assets/images/topRightArrow.svg";
+import topRightArrow from "@/../public/assets/images/topRightArrow.svg";
 function FeatureBox({ label, icon }) {
   return (
     <div className="border border-gray-15 bg-gray-10 rounded-xl px-5 py-10 flex flex-col gap-5 relative items-center max-laptop:gap-4 max-laptop:px-4 max-laptop:py-7.5 max-sm:px-3.5 max-sm:py-5 max-sm:rounded-[10px]">
