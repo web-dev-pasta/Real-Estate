@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "@/components/button";
 import Box from "@/components/box";
-import CircularText from "@/components/CircularText";
+import CircularText from "@/components/circular-text";
 function Hero() {
   let boxes = [
     { number: 200, text: "Happy Customers" },
