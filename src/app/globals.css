@@ -10,15 +10,32 @@
   --color-gray-08: #141414;
   --color-gray-09: #999999;
   --color-purple-60: #703bf7;
-  --breakpoint-laptop: 1441px;
   --breakpoint-large: 1650px;
-  --breakpoint-small-mobile: 380px;
+  --breakpoint-laptop: 1441px;
+  --breakpoint-md-custom: 991px;
   --breakpoint-tiny-mobile: 400px;
+  --breakpoint-small-mobile: 380px;
   --max-width-container: 1596px;
 }
 
 @layer components {
   .gray_text {
-    @apply text-gray-09 font-medium text-lg max-laptop:text-[16px] max-sm:text-sm;
+    @apply text-gray-09 font-medium leading-normal text-lg max-laptop:text-[16px] max-sm:text-sm;
   }
+  .semi_bold_font {
+    @apply text-white font-semibold text-2xl leading-normal max-laptop:text-xl max-sm:text-[18px];
+  }
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 2px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #262626;
+}
+
+.custom-scroll::-webkit-scrollbar-button {
+  display: none;
 }

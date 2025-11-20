@@ -22,16 +22,12 @@ function Hero() {
           </p>
         </div>
         <div className="flex gap-5 items-center max-lg:flex-col max-lg:gap-3">
-          <Button
-            label="Learn More"
-            color="black"
-            className="max-lg:w-full max-lg:text-center"
-          />
-          <Button
-            label="Browse Properties"
-            color="purble"
-            className="max-lg:w-full max-lg:text-center"
-          />
+          <Button color="black" className="max-lg:w-full max-lg:text-center">
+            Learn More
+          </Button>
+          <Button color="purble" className="max-lg:w-full max-lg:text-center">
+            Browse Properties
+          </Button>
         </div>
         <div className="flex gap-5 flex-wrap max-laptop:gap-4">
           {boxes.map(({ number, text }, i) => (
