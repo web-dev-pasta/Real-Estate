@@ -69,7 +69,7 @@ function PropertiesCard({ image, price, data, title, description }) {
             <span className="gray_text max-laptop:text-[14px]">Price</span>
             <span className="semi_bold_font">${price}</span>
           </div>
-          <Button color="purble" className="w-full text-center">
+          <Button color="purple" className="w-full text-center">
             View Property Details
           </Button>
         </div>

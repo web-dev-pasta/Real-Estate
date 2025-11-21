@@ -1,5 +1,6 @@
 import AskedQuestions from "./asked-questions";
 import Clients from "./clients";
+import CallToAction from "./cta";
 import FeatureIconsSection from "./feature-icons";
 import FeatureProperties from "./feature-properties";
 import Hero from "./hero";
@@ -12,6 +13,7 @@ function Home() {
       <FeatureProperties />
       <Clients />
       <AskedQuestions />
+      <CallToAction />
     </>
   );
 }

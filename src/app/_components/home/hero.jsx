@@ -25,7 +25,7 @@ function Hero() {
           <Button color="black" className="max-lg:w-full max-lg:text-center">
             Learn More
           </Button>
-          <Button color="purble" className="max-lg:w-full max-lg:text-center">
+          <Button color="purple" className="max-lg:w-full max-lg:text-center">
             Browse Properties
           </Button>
         </div>
