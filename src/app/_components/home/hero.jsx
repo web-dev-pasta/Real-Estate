@@ -22,10 +22,10 @@ function Hero() {
           </p>
         </div>
         <div className="flex gap-5 items-center max-lg:flex-col max-lg:gap-3">
-          <Button color="black" className="max-lg:w-full max-lg:text-center">
+          <Button color="black" className="max-sm:w-full max-lg:w-[250px] max-lg:text-center">
             Learn More
           </Button>
-          <Button color="purple" className="max-lg:w-full max-lg:text-center">
+          <Button color="purple" className="max-sm:w-full max-lg:w-[250px] max-lg:text-center">
             Browse Properties
           </Button>
         </div>
