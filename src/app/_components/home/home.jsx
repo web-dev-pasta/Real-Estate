@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import AskedQuestions from "./asked-questions";
 import Clients from "./clients";
 import CallToAction from "./cta";
@@ -14,6 +15,7 @@ function Home() {
       <Clients />
       <AskedQuestions />
       <CallToAction />
+      <Footer />
     </>
   );
 }

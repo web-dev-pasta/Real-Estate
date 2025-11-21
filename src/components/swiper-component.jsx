@@ -16,7 +16,7 @@ function SwiperComponent({
   return (
     <div
       className={cn(
-        "mt-37.5 max-laptop:mt-30 max-sm:mt-20 max-w-container mx-auto relative max-large:px-4",
+        "mt-37.5 max-laptop:mt-30 max-sm:mt-20 max-w-container max-laptop:max-w-7xl mx-auto relative max-large:px-4",
         className
       )}
     >
