@@ -10,7 +10,7 @@ function AboutHero() {
     { number: "16", text: "Years of Experience" },
   ];
   return (
-    <div className="mt-25 max-laptop:mt-17.5 max-lg:mt-12.5 max-sm:gap-10 max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 flex items-center gap-20 max-laptop:gap-15 max-lg:flex-col-reverse">
+    <div className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 mt-25 max-laptop:mt-17.5 max-lg:mt-12.5 max-sm:gap-10 max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 flex items-center gap-20 max-laptop:gap-15 max-lg:flex-col-reverse">
       <div className="left flex-1 flex flex-col gap-20 py-[67px] max-laptop:gap-12.5 max-sm:gap-10 max-laptop:py-[55px] max-lg:py-0">
         <SpecialHeading
           title="Our Journey"

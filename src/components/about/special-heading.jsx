@@ -2,9 +2,14 @@ import React from "react";
 import stars from "@/../public/assets/images/stars.svg";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-function SpecialHeading({ title, description, imageClass = "" }) {
+function SpecialHeading({ title, description, className, imageClass = "" }) {
   return (
-    <div className="text flex flex-col gap-3.5 max-laptop:gap-2.5 max-sm:gap-1.5 relative">
+    <div
+      className={cn(
+        "text flex flex-col gap-3.5 max-laptop:gap-2.5 max-sm:gap-1.5 relative",
+        className
+      )}
+    >
       <div
         className={cn(
           "absolute w-[68px] h-7.5 -top-10 -left-5 max-large:left-0 max-laptop:left-1.5 max-laptop:-top-7.5 max-laptop:w-[54px]",
