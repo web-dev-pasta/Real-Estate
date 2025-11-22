@@ -6,7 +6,7 @@ function SpecialHeading({ title, description, className, imageClass = "" }) {
   return (
     <div
       className={cn(
-        "text flex flex-col gap-3.5 max-laptop:gap-2.5 max-sm:gap-1.5 relative",
+        "text flex flex-col gap-3.5 max-laptop:gap-2.5 max-sm:gap-2 relative",
         className
       )}
     >

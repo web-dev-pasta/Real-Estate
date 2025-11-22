@@ -33,7 +33,7 @@ function AboutValues() {
     },
   ];
   return (
-    <div className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 flex gap-20 max-laptop:gap-15 max-lg:flex-col md:items-center max-md:gap-10 relative">
+    <section className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 flex gap-20 max-laptop:gap-15 max-lg:flex-col md:items-center max-md:gap-10 relative">
       <SpecialHeading
         title="Our Values"
         className="max-w-[517px] max-laptop:max-w-[413px] md:text-center lg:text-start"
@@ -64,7 +64,7 @@ function AboutValues() {
         <div className="absolute w-[calc(100%+20px)] h-[calc(100%+20px)] bg-gray-10 rounded-xl -left-2.5 -top-2.5 -z-10 max-md:w-[calc(100%+12px)] max-md:h-[calc(100%+12px)] max-md:-top-1.5 max-md:-left-1.5"></div>
         <div className="absolute h-px bg-gray-15 top-1/2 left-15 w-[calc(100%-120px)] max-laptop:w-[calc(100%-100px)] max-laptop:left-12.5 max-md:w-[calc(100%-48px)] max-md:left-6 max-md:hidden" />
       </div>
-    </div>
+    </section>
   );
 }
 

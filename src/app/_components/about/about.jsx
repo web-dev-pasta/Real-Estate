@@ -1,5 +1,6 @@
 import AboutAchievements from "./about-achievements";
 import AboutHero from "./about-hero";
+import AboutNavigating from "./about-navigating";
 import AboutValues from "./about-values";
 
 function About() {
@@ -8,6 +9,7 @@ function About() {
       <AboutHero />
       <AboutValues />
       <AboutAchievements />
+      <AboutNavigating />
     </>
   );
 }

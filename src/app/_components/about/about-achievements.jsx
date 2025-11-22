@@ -26,7 +26,7 @@ function AboutAchievements() {
         title="Our Achievements"
         description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
       />
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] max-laptop:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-10 max-laptop:gap-7.5 max-sm:gap-5">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] max-laptop:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-10 max-laptop:gap-7.5 max-sm:gap-5 max-tiny-mobile:grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
         {data.map(({ title, description, laptopText }, i) => (
           <div
             key={i}
