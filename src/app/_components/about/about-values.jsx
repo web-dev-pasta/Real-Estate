@@ -39,12 +39,17 @@ function AboutValues() {
         className="max-w-[517px] max-laptop:max-w-[413px] md:text-center lg:text-start"
         description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
       />
-      <div className="p-15 max-laptop:p-12.5 max-md:p-6 border rounded-xl border-gray-15 relative grid grid-cols-2 grid-rows-2 gap-15 max-laptop:gap-12 max-md:grid-cols-1 max-md:gap-10">
+      <div className="p-15 max-laptop:p-12.5 max-md:p-6 border rounded-xl border-gray-15 max-md:grid-rows-none relative grid grid-cols-2 grid-rows-2 gap-15 max-laptop:gap-12 max-md:grid-cols-1 max-md:gap-0">
         {data.map(({ title, description, image, alt }, i) => (
           <div
-            className="flex flex-col gap-5 max-laptop:gap-4 max-md:gap-3.5 justify-between"
+            className={`flex flex-col gap-5 max-laptop:gap-4 max-md:gap-3.5 md:justify-between relative max-md:py-5 ${
+              i === 0 ? `pt-0!` : ``
+            } ${i == 3 ? `pb-0!` : ` max-md:border-b border-gray-15`} `}
             key={i}
           >
+            {i % 2 === 0 && (
+              <div className="absolute inset-y-0 w-px bg-gray-15 -right-7.5 max-laptop:-right-6 max-md:hidden" />
+            )}
             <div className="image flex gap-3.5 items-center max-laptop:gap-2.5 max-md:gap-2">
               <img
                 src={image}
@@ -56,8 +61,8 @@ function AboutValues() {
             <p className="gray_text">{description}</p>
           </div>
         ))}
-        <div className="absolute w-[calc(100%+20px)] h-[calc(100%+20px)] bg-gray-10 rounded-xl -left-2.5 -top-2.5 -z-10"></div>
-        <div className="absolute h-px bg-gray-15 top-1/2 left-15 w-[calc(100%-120px)] max-laptop:w-[calc(100%-100px)] max-laptop:left-12.5 max-md:w-[calc(100%-48px)] max-md:left-6"></div>
+        <div className="absolute w-[calc(100%+20px)] h-[calc(100%+20px)] bg-gray-10 rounded-xl -left-2.5 -top-2.5 -z-10 max-md:w-[calc(100%+12px)] max-md:h-[calc(100%+12px)] max-md:-top-1.5 max-md:-left-1.5"></div>
+        <div className="absolute h-px bg-gray-15 top-1/2 left-15 w-[calc(100%-120px)] max-laptop:w-[calc(100%-100px)] max-laptop:left-12.5 max-md:w-[calc(100%-48px)] max-md:left-6 max-md:hidden" />
       </div>
     </div>
   );
