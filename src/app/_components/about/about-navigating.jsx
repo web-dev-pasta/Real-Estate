@@ -45,7 +45,7 @@ function AboutNavigating() {
             <div className="px-5 py-4 max-laptop:px-4 max-laptop:py-3.5 text-white font-medium text-xl border-l border-purple-60 max-laptop:text-[16px]">
               Step {String(i + 1).padStart(2, "0")}
             </div>
-            <div className="p-12.5 flex flex-col gap-5 max-laptop:gap-4 rounded-tl-none rounded-xl max-laptop:rounded-[10px] border border-gray-15 relative overflow-hidden flex-1 max-laptop:p-10 max-md:p-7.5 max-sm:gap-3.5">
+            <div className="p-12.5 flex flex-col gap-5 max-laptop:gap-4 rounded-tl-none! rounded-xl max-laptop:rounded-[10px] border border-gray-15 relative overflow-hidden flex-1 max-laptop:p-10 max-md:p-7.5 max-sm:gap-3.5">
               <p className="font-semibold text-[26px] leading-none text-white max-laptop:text-xl">
                 {title}
               </p>
