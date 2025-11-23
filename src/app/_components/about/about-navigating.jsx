@@ -41,7 +41,10 @@ function AboutNavigating() {
       />
       <div className="grid grid-cols-3 grid-rows-2 gap-x-7.5 gap-y-12.5 max-laptop:gap-x-5 max-laptop:gap-y-10 max-xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] max-md:grid-cols-1 max-sm:gap-7.5">
         {data.map(({ title, description }, i) => (
-          <div className="relative flex flex-col" key={i}>
+          <div
+            className={`relative flex flex-col ${i > 2 && "max-sm:hidden"}`}
+            key={i}
+          >
             <div className="px-5 py-4 max-laptop:px-4 max-laptop:py-3.5 text-white font-medium text-xl border-l border-purple-60 max-laptop:text-[16px]">
               Step {String(i + 1).padStart(2, "0")}
             </div>

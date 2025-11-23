@@ -12,14 +12,6 @@ function AboutClients() {
         "Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.",
     },
     {
-      date: "2019",
-      title: "ABC Corporation",
-      domain: "Commercial Real Estate",
-      category: "Luxury Home Development",
-      comment:
-        "Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.",
-    },
-    {
       date: "2020",
       title: "Global Tech Solutions",
       domain: "Technology Offices",
