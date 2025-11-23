@@ -1,4 +1,3 @@
-import React from "react";
 import About from "../_components/about/about";
 
 function AboutPage() {

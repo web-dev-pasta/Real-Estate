@@ -7,11 +7,11 @@ import "swiper/css/navigation";
 import arrow from "@/../public/assets/images/arrow.svg";
 
 import { Autoplay } from "swiper/modules";
-import PropertiesCard from "./properties-card";
+import PropertiesCard from "./home/properties-card";
 import Button from "./button";
 import Image from "next/image";
-import ClientCard from "./client-card";
-import QuestionCard from "./question-card";
+import ClientCard from "./home/client-card";
+import QuestionCard from "./home/question-card";
 import ClientsBox from "./about/clients-box";
 
 export default function Slider({ cards, id, buttonText }) {

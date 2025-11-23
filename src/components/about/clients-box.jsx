@@ -11,7 +11,7 @@ function ClientsBox({ date, title, domain, category, comment }) {
     },
   ];
   return (
-    <div className="p-2 rounded-xl bg-gray-10 max-sm:p-1.5">
+    <div className="p-2 rounded-xl bg-gray-10 max-sm:p-1.5 h-full">
       <div className="p-12.5 max-laptop:p-10 max-sm:p-6 bg-gray-08 flex flex-col gap-10 max-laptop:gap-7.5 rounded-xl border border-gray-15 relative h-full justify-between max-sm:gap-7.5">
         <div className="flex sm:items-center gap-7.5 max-laptop:gap-5 max-sm:flex-col max-sm:gap-5">
           <div className="flex flex-col gap-1.5 flex-1 max-laptop:gap-1">

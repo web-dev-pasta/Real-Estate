@@ -18,9 +18,7 @@ function SpecialHeading({ title, description, className, imageClass = "" }) {
       >
         <Image src={stars} alt="stars" width="auto" height="auto" />
       </div>
-      <h2 className="text-5xl font-semibold text-white max-laptop:text-[38px] leading-normal max-sm:text-[28px]">
-        {title}
-      </h2>
+      <h2 className="large_text">{title}</h2>
       <p className="gray_text max-w-[1200px] max-laptop:max-w-[975px]">
         {description}
       </p>

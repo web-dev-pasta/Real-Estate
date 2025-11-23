@@ -1,4 +1,4 @@
-import SpecialHeading from "@/components/about/special-heading";
+import SpecialHeading from "@/components/special-heading";
 import React from "react";
 
 function AboutValues() {
@@ -33,7 +33,7 @@ function AboutValues() {
     },
   ];
   return (
-    <section className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 flex gap-20 max-laptop:gap-15 max-lg:flex-col md:items-center max-md:gap-10 relative">
+    <section className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 max_container flex gap-20 max-laptop:gap-15 max-lg:flex-col md:items-center max-md:gap-10 relative">
       <SpecialHeading
         title="Our Values"
         className="max-w-[517px] max-laptop:max-w-[413px] md:text-center lg:text-start"

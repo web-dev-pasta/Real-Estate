@@ -9,6 +9,7 @@
   --color-gray-15: #262626;
   --color-gray-08: #141414;
   --color-gray-09: #999999;
+  --color-gray-40: #666666;
   --color-purple-60: #703bf7;
   --breakpoint-large: 1650px;
   --breakpoint-laptop: 1441px;
@@ -24,6 +25,12 @@
   }
   .semi_bold_font {
     @apply text-white font-semibold text-2xl leading-normal max-laptop:text-xl max-sm:text-[18px];
+  }
+  .max_container {
+    @apply max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4;
+  }
+  .large_text {
+    @apply text-5xl font-semibold text-white max-laptop:text-[38px] leading-normal max-sm:text-[28px];
   }
 }
 

@@ -1,4 +1,4 @@
-import SpecialHeading from "@/components/about/special-heading";
+import SpecialHeading from "@/components/special-heading";
 import manOne from "@/../public/assets/images/man-a-1.png";
 import manTwo from "@/../public/assets/images/man-a-2.png";
 import womanOne from "@/../public/assets/images/woman-a-1.png";
@@ -29,7 +29,7 @@ function AboutTeam() {
     },
   ];
   return (
-    <section className="mb-37.5 max-[1320px]:px-4 max-laptop:mb-30 max-sm:mb-20 max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 max-laptop:px-0 flex flex-col gap-20 max-laptop:gap-15 max-md:gap-10">
+    <section className="mb-37.5 max-[1320px]:px-4 max-laptop:mb-30 max-sm:mb-20 max_container max-laptop:px-0 flex flex-col gap-20 max-laptop:gap-15 max-md:gap-10">
       <SpecialHeading
         title="Meet the Estatein Team"
         description="At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality."

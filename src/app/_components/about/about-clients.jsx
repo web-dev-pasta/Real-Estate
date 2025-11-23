@@ -55,6 +55,7 @@ function AboutClients() {
 
   return (
     <SwiperComponent
+      className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 mt-0!"
       header="Our Valued Clients"
       description="At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving"
     >

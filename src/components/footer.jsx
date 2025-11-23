@@ -61,7 +61,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 flex gap-20 py-25 max-laptop:py-20 items-start max-lg:flex-col max-sm:py-12.5 max-sm:gap-12.5">
+      <footer className="max_container flex gap-20 py-25 max-laptop:py-20 items-start max-lg:flex-col max-sm:py-12.5 max-sm:gap-12.5">
         <div className="logo space-y-7.5 max-laptop:space-y-6 w-[538px] max-laptop:w-[326px] max-lg:mx-auto">
           <img
             src="/assets/images/logo.svg"
@@ -150,7 +150,7 @@ function Footer() {
         </nav>
       </footer>
       <div className="py-4 bg-gray-10 max-laptop:py-3 max-sm:py-5 max-sm:px-4">
-        <div className="max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 flex justify-between items-center max-sm:flex-col-reverse max-sm:gap-5 max-sm:p-0">
+        <div className="max_container flex justify-between items-center max-sm:flex-col-reverse max-sm:gap-5 max-sm:p-0">
           <div className="left flex items-center gap-9.5 py-2.5 text-white text-lg max-laptop:text-sm max-laptop:gap-5 font-medium max-sm:flex-col max-sm:gap-2.5 max-sm:text-sm">
             <p>@{new Date().getFullYear()} Estatin. All Rights Reserved.</p>
             <p>Terms & Conditions</p>

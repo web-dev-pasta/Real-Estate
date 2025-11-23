@@ -1,4 +1,4 @@
-import SpecialHeading from "@/components/about/special-heading";
+import SpecialHeading from "@/components/special-heading";
 
 function AboutAchievements() {
   const data = [
@@ -21,7 +21,7 @@ function AboutAchievements() {
     },
   ];
   return (
-    <section className="mb-37.5 max-[1320px]:px-4 max-laptop:mb-30 max-sm:mb-20 max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 max-laptop:px-0 flex flex-col gap-20 max-laptop:gap-15 max-md:gap-10">
+    <section className="mb-37.5 max-[1320px]:px-4 max-laptop:mb-30 max-sm:mb-20 max_container max-laptop:px-0 flex flex-col gap-20 max-laptop:gap-15 max-md:gap-10">
       <SpecialHeading
         title="Our Achievements"
         description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."

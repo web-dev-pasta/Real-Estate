@@ -5,9 +5,9 @@ import React from "react";
 function CallToAction() {
   return (
     <div className="py-25 max-laptop:py-15 border-y border-gray-15 relative overflow-hidden max-md:py-12.5">
-      <div className="max-w-container max-laptop:max-w-7xl mx-auto max-large:px-4 text-white flex gap-[250px] max-laptop:gap-[150px] items-center max-md:flex-col max-md:gap-7.5">
+      <div className="max_container text-white flex gap-[250px] max-laptop:gap-[150px] items-center max-md:flex-col max-md:gap-7.5">
         <div className="text space-y-3.5">
-          <p className="text-5xl font-semibold text-white max-laptop:text-[38px] leading-normal max-sm:text-[28px]">
+          <p className="large_text">
             Start Your Real Estate Journey Today
           </p>
           <p className="gray_text">

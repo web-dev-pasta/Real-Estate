@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Properties from "../_components/properties/properties";
 
 function PropertiesPage() {
-  return (
-    <div>PropertiesPage</div>
-  )
+  return <Properties />;
 }
 
-export default PropertiesPage
+export default PropertiesPage;

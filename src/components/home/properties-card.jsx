@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Button from "./button";
+import Button from "../button";
 
 function PropertiesCard({ image, price, data, title, description }) {
   const props = {
