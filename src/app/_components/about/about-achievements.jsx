@@ -41,7 +41,7 @@ function AboutAchievements() {
             {laptopText && (
               <p className={`gray_text laptop:hidden`}>{laptopText}</p>
             )}
-            <div className="absolute w-[calc(100%+16px)] h-[calc(100%+16px)] max-laptop:w-[calc(100%+12px)] max-laptop:h-[calc(100%+12px)] max-sm:h-[calc(100%+8px)] max-sm:w-[calc(100%+8px)] -top-2 -left-2 max-laptop:-top-1.5 max-laptop:-left-1.5 max-sm:-top-1 max-sm:-left-1 bg-gray-10 -z-10 rounded-xl"></div>
+            <div className="absolute w-[calc(100%+16px)] h-[calc(100%+16px)] max-laptop:w-[calc(100%+12px)] max-laptop:h-[calc(100%+12px)] max-sm:h-[calc(100%+8px)] max-sm:w-[calc(100%+8px)] -top-2 -left-2 max-laptop:-top-1.5 max-laptop:-left-1.5 max-sm:-top-1 max-sm:-left-1 bg-gray-10 -z-10 rounded-xl" />
           </div>
         ))}
       </div>

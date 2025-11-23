@@ -12,6 +12,7 @@ import Button from "./button";
 import Image from "next/image";
 import ClientCard from "./client-card";
 import QuestionCard from "./question-card";
+import ClientsBox from "./about/clients-box";
 
 export default function Slider({ cards, id, buttonText }) {
   const swiper1Ref = useRef(null);
@@ -77,6 +78,19 @@ export default function Slider({ cards, id, buttonText }) {
         </SwiperSlide>
       ));
     }
+    if (id === 4) {
+      return cards?.map(({ date, title, domain, category, comment }, i) => (
+        <SwiperSlide key={i} className="h-auto!">
+          <ClientsBox
+            date={date}
+            title={title}
+            domain={domain}
+            category={category}
+            comment={comment}
+          />
+        </SwiperSlide>
+      ));
+    }
   };
 
   return (
@@ -93,18 +107,22 @@ export default function Slider({ cards, id, buttonText }) {
         onSlideChange={(swiper) => updateButtons(swiper)}
         modules={[Autoplay]}
         allowTouchMove={true}
-        slidesPerView={3}
+        slidesPerView={id === 4 ? 2 : 3}
         className="mySwiper max-w-container pb-12.5! max-laptop:pb-10! max-sm:pb-7.5!"
-        slidesPerGroup={3}
+        slidesPerGroup={id === 4 ? 2 : 3}
         breakpoints={{
           0: { slidesPerView: 1, slidesPerGroup: 1 },
           768: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
+            slidesPerView: id === 4 ? 1 : 2,
+            slidesPerGroup: id === 4 ? 1 : 2,
             spaceBetween: 20,
           },
-          1280: { slidesPerView: 3, slidesPerGroup: 3 },
-          1440: { spaceBetween: 30 },
+          1280: {
+            slidesPerView: id === 4 ? 2 : 3,
+            slidesPerGroup: id === 4 ? 2 : 3,
+            spaceBetween: id === 4 ? 40 : 30,
+          },
+          1440: { spaceBetween: id === 4 ? 50 : 30 },
         }}
       >
         {renderSlides()}
@@ -137,11 +155,22 @@ export default function Slider({ cards, id, buttonText }) {
           </div>
         </div>
       </div>
-      <div className="flex justify-between border-t border-gray-15 pt-4 gap-3 max-tiny-mobile:flex-col items-center md:hidden">
-        <Button color="gray" className="whitespace-nowrap">
-          {buttonText}
-        </Button>
-        <div className="pagination flex items-center gap-2.5 justify-between w-40">
+      <div
+        className={`flex justify-between border-t border-gray-15 pt-4 gap-3 max-tiny-mobile:flex-col items-center md:hidden ${
+          !buttonText && `pt-0! border-none!`
+        }`}
+      >
+        {buttonText && (
+          <Button color="gray" className="whitespace-nowrap">
+            {buttonText}
+          </Button>
+        )}
+
+        <div
+          className={`pagination flex items-center gap-2.5 justify-between w-40 ${
+            !buttonText && `flex-1`
+          }`}
+        >
           <div
             className={`aspect-square w-[58px] max-laptop:w-11 rotate-180 ${
               disablePrev ? "opacity-50" : "opacity-100"

@@ -14,7 +14,7 @@ function SwiperComponent({
   hiddenText = "",
 }) {
   return (
-    <div
+    <section
       className={cn(
         "mt-37.5 max-laptop:mt-30 max-sm:mt-20 max-w-container max-laptop:max-w-7xl mx-auto relative max-large:px-4",
         className
@@ -33,12 +33,14 @@ function SwiperComponent({
             {hiddenText && <span className="max-sm:hidden">{hiddenText}</span>}
           </p>
         </div>
-        <Button color="gray" className="whitespace-nowrap max-md:hidden">
-          {buttonText}
-        </Button>
+        {buttonText && (
+          <Button color="gray" className="whitespace-nowrap max-md:hidden">
+            {buttonText}
+          </Button>
+        )}
       </div>
       <div>{children}</div>
-    </div>
+    </section>
   );
 }
 
