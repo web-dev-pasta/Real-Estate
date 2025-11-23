@@ -13,6 +13,8 @@ import Image from "next/image";
 import ClientCard from "./home/client-card";
 import QuestionCard from "./home/question-card";
 import ClientsBox from "./about/clients-box";
+import PropertiesPossibilities from "@/app/_components/properties/properties-possibilities";
+import SliderCardProperties from "./properties/slider-card-properties";
 
 export default function Slider({ cards, id, buttonText }) {
   const swiper1Ref = useRef(null);
@@ -87,6 +89,19 @@ export default function Slider({ cards, id, buttonText }) {
             domain={domain}
             category={category}
             comment={comment}
+          />
+        </SwiperSlide>
+      ));
+    }
+    if (id === 5) {
+      return cards?.map(({ image, title, description, noData, price }, i) => (
+        <SwiperSlide key={i} className="h-auto!">
+          <SliderCardProperties
+            image={image}
+            price={price}
+            noData={noData}
+            description={description}
+            title={title}
           />
         </SwiperSlide>
       ));

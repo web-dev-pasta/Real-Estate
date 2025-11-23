@@ -12,6 +12,7 @@ function SwiperComponent({
   description,
   buttonText,
   hiddenText = "",
+  grayClass,
 }) {
   return (
     <section
@@ -26,7 +27,9 @@ function SwiperComponent({
       <div className="header flex items-end justify-between gap-50 max-laptop:gap-[150px] mb-20 max-laptop:mb-15 max-sm:mb-10">
         <div className="text flex flex-col gap-3.5 max-laptop:gap-2.5 max-sm:gap-1.5">
           <h2 className="large_text">{header}</h2>
-          <p className="gray_text max-w-[1200px] max-laptop:max-w-[975px]">
+          <p
+            className={`gray_text max-w-[1200px] max-laptop:max-w-[975px] ${grayClass}`}
+          >
             {description}
             {hiddenText && <span className="max-sm:hidden">{hiddenText}</span>}
           </p>
