@@ -2,7 +2,13 @@ import React from "react";
 import stars from "@/../public/assets/images/stars.svg";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-function SpecialHeading({ title, description, className, imageClass = "" }) {
+function SpecialHeading({
+  title,
+  description,
+  className,
+  imageClass = "",
+  grayClass = "",
+}) {
   return (
     <div
       className={cn(
@@ -19,7 +25,12 @@ function SpecialHeading({ title, description, className, imageClass = "" }) {
         <Image src={stars} alt="stars" width="auto" height="auto" />
       </div>
       <h2 className="large_text">{title}</h2>
-      <p className="gray_text max-w-[1200px] max-laptop:max-w-[975px]">
+      <p
+        className={cn(
+          "gray_text max-w-[1200px] max-laptop:max-w-[975px]",
+          grayClass
+        )}
+      >
         {description}
       </p>
     </div>
