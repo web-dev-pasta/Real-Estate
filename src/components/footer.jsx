@@ -63,7 +63,7 @@ function Footer() {
   return (
     <>
       <footer className="max_container flex gap-20 py-25 max-laptop:py-20 items-start max-lg:flex-col max-sm:py-12.5 max-sm:gap-12.5">
-        <div className="logo space-y-7.5 max-laptop:space-y-6 w-[538px] max-laptop:w-[326px] max-lg:mx-auto">
+        <div className="logo space-y-7.5 max-laptop:space-y-6 w-[538px] max-laptop:w-[326px] max-lg:mx-auto max-sm:w-[initial]">
           <Image
             width={160}
             height={48}

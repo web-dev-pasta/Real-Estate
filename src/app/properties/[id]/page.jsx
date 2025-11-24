@@ -8,6 +8,8 @@ import imageSeven from "@/../public/assets/images/properties-7.jpg";
 import imageEight from "@/../public/assets/images/properties-8.jpg";
 import imageNine from "@/../public/assets/images/properties-9.jpg";
 import Hero from "./hero";
+import { notFound } from "next/navigation";
+import PropForm from "./prop-form";
 async function SingleProperty({ params }) {
   const resolvedParams = await params;
   const { id } = resolvedParams;
@@ -85,10 +87,16 @@ async function SingleProperty({ params }) {
       noData: "Waterfront Grandeur - Life by the Waves",
     },
   };
+  const keys = Object.keys(cards);
+  if (!keys.includes(id)) {
+    return notFound();
+  }
+  const title = cards[id].title;
 
   return (
     <>
       <Hero cards={cards} id={id} />
+      <PropForm title={title} />
     </>
   );
 }

@@ -1,6 +1,5 @@
 import Button from "@/components/button";
 import Image from "next/image";
-import small from "@/../public/assets/images/small.png";
 import smallTwo from "@/../public/assets/images/smallTwo.png";
 import smallThree from "@/../public/assets/images/smallThree.png";
 import smallFour from "@/../public/assets/images/smallFour.png";
@@ -45,7 +44,7 @@ function Hero({ cards, id }) {
     "Private garage and ample storage space",
   ];
   return (
-    <section className="max_container flex flex-col mt-30 mb-37.5 max-laptop:mt-20 max-laptop:mb-30 max-md:mt-15">
+    <section className="max_container flex flex-col mt-30 mb-37.5 max-laptop:mt-20 max-laptop:mb-30 max-md:mt-15 max-sm:mb-20">
       <div className="flex items-center gap-12.5 mb-12.5 max-laptop:mb-10 max-md:mb-7.5">
         <div className="flex md:items-center gap-5 flex-1 max-md:flex-col max-md:gap-2.5">
           <p className="font-semibold text-[30px] text-white">

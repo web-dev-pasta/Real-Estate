@@ -89,15 +89,15 @@ function PropertiesForm() {
             placeholder="Enter your Message here.."
           />
         </div>
-        <div className="flex justify-between items-center gap-12.5">
-          <div className="flex-1 flex items-center gap-2.5">
+        <div className="flex justify-between items-center gap-12.5 max-sm:flex-col max-sm:gap-5">
+          <div className="flex-1 flex items-center gap-2.5 max-sm:gap-1.5">
             <span className="inline-block w-7 aspect-square max-laptop:w-6 border border-gray-15 bg-gray-10 rounded-sm"></span>
             <p className="gray_text">
-              I agree with <span className="underline">Terms of Use</span> and
-              <span>Privacy Policy</span>
+              I agree with <span className="underline">Terms of Use</span> and{" "}
+              <span className="underline">Privacy Policy</span>
             </p>
           </div>
-          <Button color="purple">Send Your Message</Button>
+          <Button color="purple" className="max-sm:w-full text-center">Send Your Message</Button>
         </div>
       </form>
     </section>
