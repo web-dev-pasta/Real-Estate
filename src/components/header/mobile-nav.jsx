@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 function MobileNav() {
   const [active, setActive] = useState(false);
   const links = useSelector((state) => state.links.links);
-  
 
   const allLinks = [
     ...links,
@@ -24,7 +24,12 @@ function MobileNav() {
         onClick={() => setActive((prev) => !prev)}
         className="flex justify-center items-center cursor-pointer"
       >
-        <img src="assets/images/burgerIcon.svg" alt="burger-icon" />
+        <Image
+          width={28}
+          height={28}
+          src="/assets/images/burgerIcon.svg"
+          alt="burger-icon"
+        />
       </button>
 
       <div
@@ -40,7 +45,12 @@ function MobileNav() {
       >
         <div className="flex justify-end">
           <button onClick={() => setActive(false)} className="cursor-pointer">
-            <img src="assets/images/xIcon.svg" alt="x-icon" />
+            <Image
+              width={24}
+              height={24}
+              src="/assets/images/xIcon.svg"
+              alt="x-icon"
+            />
           </button>
         </div>
         <div className="flex flex-col gap-3 mt-5">

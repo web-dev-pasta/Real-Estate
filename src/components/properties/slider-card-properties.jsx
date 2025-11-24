@@ -2,7 +2,14 @@ import React from "react";
 import Image from "next/image";
 import Button from "../button";
 
-function SliderCardProperties({ image, price, title, description, noData }) {
+function SliderCardProperties({
+  id,
+  image,
+  price,
+  title,
+  description,
+  noData,
+}) {
   return (
     <div className="bg-gray-08 border border-gray-15 rounded-[10px] p-10 max-laptop:p-7.5 flex flex-col gap-7.5 max-laptop:gap-5 h-full max-sm:p-6 max-sm:gap-4">
       <div className="image overflow-hidden rounded-[10px] h-80 max-laptop:h-[255px] max-sm:h-[210px] ">
@@ -38,6 +45,7 @@ function SliderCardProperties({ image, price, title, description, noData }) {
           <Button
             color="purple"
             className="w-full whitespace-nowrap text-center"
+            link={`/properties/${id}`}
           >
             View Property Details
           </Button>

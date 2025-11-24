@@ -1,4 +1,5 @@
 import SpecialHeading from "@/components/special-heading";
+import Image from "next/image";
 import React from "react";
 
 function AboutValues() {
@@ -51,7 +52,9 @@ function AboutValues() {
               <div className="absolute inset-y-0 w-px bg-gray-15 -right-7.5 max-laptop:-right-6 max-md:hidden" />
             )}
             <div className="image flex gap-3.5 items-center max-laptop:gap-2.5 max-md:gap-2">
-              <img
+              <Image
+                width={74}
+                height={74}
                 src={image}
                 alt={alt}
                 className="max-laptop:w-15 max-md:w-[52px]"

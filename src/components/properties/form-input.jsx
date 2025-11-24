@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React from "react";
 
 function FormInput({
@@ -25,7 +26,9 @@ function FormInput({
         } max-laptop:py-4 max-laptop:px-5 border border-gray-15 bg-gray-10 rounded-lg flex justify-between items-center gap-3 h-17 max-laptop:h-13`}
       >
         {id === 2 && (
-          <img
+          <Image
+            width={24}
+            height={24}
             src="/assets/images/phoneIcon.svg"
             alt="phone-icon"
             className={imageClass}
@@ -44,7 +47,9 @@ function FormInput({
           ""
         )}
         {id === 1 && (
-          <img
+          <Image
+            width={24}
+            height={24}
             src="/assets/images/arrowDown.svg"
             alt="arrow-down"
             className={imageClass}

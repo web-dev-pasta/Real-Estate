@@ -47,8 +47,10 @@ function AboutTeam() {
                 alt={name}
               />
               <div className="absolute w-[76px] h-[52px] rounded-[43px] px-[26px] py-3.5 bg-purple-60 z-10 flex justify-center items-center -bottom-[26px] left-1/2 transform -translate-x-1/2 max-laptop:py-2.5 max-laptop:px-5 max-laptop:w-15 max-laptop:h-10">
-                <img
+                <Image
                   src="/assets/images/twitter.svg"
+                  width={24}
+                  height={24}
                   alt="twitter"
                   className="max-laptop:w-20 aspect-square"
                 />
@@ -64,7 +66,9 @@ function AboutTeam() {
                   Say Hello 👋
                 </p>
                 <span className="w-11 h-11 max-laptop:w-9 max-laptop:h-9 max-sm:w-12 max-sm:h-12  flex justify-center items-center rounded-full bg-purple-60 ">
-                  <img
+                  <Image
+                    width={24}
+                    height={24}
                     src="/assets/images/sendIcon.svg"
                     alt="send-icon"
                     className="w-6 h-6 max-laptop:h-5 max-laptop:w-5"

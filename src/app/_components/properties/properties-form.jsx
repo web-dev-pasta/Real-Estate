@@ -56,11 +56,17 @@ function PropertiesForm() {
               label={label}
               placeholder={placeholder}
               id={id}
+              imageClass="max-laptop:w-5"
             />
           ))}
         </div>
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-12.5 max-laptop:gap-7.5 max-lg:gap-5">
-          <FormInput label="Budget" placeholder="Select Budget" id={1} />
+          <FormInput
+            label="Budget"
+            placeholder="Select Budget"
+            imageClass="max-laptop:w-5"
+            id={1}
+          />
           <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
             {rowThree.map(({ label, placeholder, id }, i) => (
               <FormInput
@@ -68,6 +74,7 @@ function PropertiesForm() {
                 label={label}
                 placeholder={placeholder}
                 id={id}
+                imageClass="max-laptop:w-5"
               />
             ))}
           </div>

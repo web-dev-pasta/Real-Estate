@@ -29,16 +29,18 @@ function AboutHero() {
       <div className="right flex-1 rounded-[10px] overflow-hidden border border-gray-15 relative">
         <Image src={heroImage} alt="hero-about" />
         <div className="absolute inset-0 -z-10 opacity-20 max-lg:hidden">
-          <img
+          <Image
             src="/assets/images/aboutAbstractDesign.svg"
-            className="w-full h-full bg-cover"
+            className="bg-cover"
+            fill
             alt="background-image"
           />
         </div>
         <div className="absolute inset-0 -z-10 opacity-20 lg:hidden ">
-          <img
+          <Image
             src="/assets/images/aboutMobileAbstractDesign.svg"
-            className="w-full h-full bg-cover"
+            className="bg-cover"
+            fill
             alt="background-image"
           />
         </div>

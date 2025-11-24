@@ -9,10 +9,12 @@
   --color-gray-15: #262626;
   --color-gray-08: #141414;
   --color-gray-09: #999999;
+  --color-gray-30: #4d4d4d;
   --color-gray-40: #666666;
   --color-purple-60: #703bf7;
   --breakpoint-large: 1650px;
   --breakpoint-laptop: 1441px;
+  --breakpoint-prop-custom: 1070px;
   --breakpoint-md-custom: 991px;
   --breakpoint-tiny-mobile: 400px;
   --breakpoint-small-mobile: 380px;

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,7 +13,6 @@ import Image from "next/image";
 import ClientCard from "./home/client-card";
 import QuestionCard from "./home/question-card";
 import ClientsBox from "./about/clients-box";
-import PropertiesPossibilities from "@/app/_components/properties/properties-possibilities";
 import SliderCardProperties from "./properties/slider-card-properties";
 
 export default function Slider({ cards, id, buttonText }) {
@@ -94,17 +93,20 @@ export default function Slider({ cards, id, buttonText }) {
       ));
     }
     if (id === 5) {
-      return cards?.map(({ image, title, description, noData, price }, i) => (
-        <SwiperSlide key={i} className="h-auto!">
-          <SliderCardProperties
-            image={image}
-            price={price}
-            noData={noData}
-            description={description}
-            title={title}
-          />
-        </SwiperSlide>
-      ));
+      return cards?.map(
+        ({ id, image, title, description, noData, price }, i) => (
+          <SwiperSlide key={i} className="h-auto!">
+            <SliderCardProperties
+              id={id}
+              image={image}
+              price={price}
+              noData={noData}
+              description={description}
+              title={title}
+            />
+          </SwiperSlide>
+        )
+      );
     }
   };
 

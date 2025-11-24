@@ -22,10 +22,16 @@ function Hero() {
           </p>
         </div>
         <div className="flex gap-5 items-center max-lg:flex-col max-lg:gap-3">
-          <Button color="black" className="max-sm:w-full max-lg:w-[250px] max-lg:text-center">
+          <Button
+            color="black"
+            className="max-sm:w-full max-lg:w-[250px] max-lg:text-center"
+          >
             Learn More
           </Button>
-          <Button color="purple" className="max-sm:w-full max-lg:w-[250px] max-lg:text-center">
+          <Button
+            color="purple"
+            className="max-sm:w-full max-lg:w-[250px] max-lg:text-center"
+          >
             Browse Properties
           </Button>
         </div>
@@ -57,7 +63,12 @@ function Hero() {
         />
         <div className="absolute top-30 -left-25 p-2 border rounded-full border-gray-15 bg-gray-08 z-10 max-lg:-bottom-15 max-lg:-left-px max-lg:top-[initial]">
           <div className="absolute top-1/2 left-1/2 transform -translate-1/2 text-white w-20 h-20 max-laptop:w-15 max-laptop:h-15">
-            <img src="/assets/images/arrowShape.svg" alt="arrow-shape" />
+            <Image
+              width={60}
+              height={60}
+              src="/assets/images/arrowShape.svg"
+              alt="arrow-shape"
+            />
           </div>
           <CircularText
             text="Discover Your Dream Property "

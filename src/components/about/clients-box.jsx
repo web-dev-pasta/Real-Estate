@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../button";
+import Image from "next/image";
 
 function ClientsBox({ date, title, domain, category, comment }) {
   const data = [
@@ -31,7 +32,9 @@ function ClientsBox({ date, title, domain, category, comment }) {
               key={i}
             >
               <div className="flex items-center gap-1.5 max-laptop:gap-1">
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   src={image}
                   className="max-laptop:w-5 aspect-square"
                   alt={label}

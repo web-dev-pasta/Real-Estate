@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -63,13 +64,17 @@ function Footer() {
     <>
       <footer className="max_container flex gap-20 py-25 max-laptop:py-20 items-start max-lg:flex-col max-sm:py-12.5 max-sm:gap-12.5">
         <div className="logo space-y-7.5 max-laptop:space-y-6 w-[538px] max-laptop:w-[326px] max-lg:mx-auto">
-          <img
+          <Image
+            width={160}
+            height={48}
             src="/assets/images/logo.svg"
             alt="logo"
             className="max-laptop:w-[113px] max-lg:mx-auto"
           />
           <div className="input-wrapper border border-gray-15 rounded-xl flex gap-2.5 items-center px-6 py-4.5 max-laptop:py-3.5 max-laptop:px-5  w-[423px] max-laptop:w-[305px] max-lg:w-full">
-            <img
+            <Image
+              width={24}
+              height={24}
               src="/assets/images/emailIcon.svg"
               alt="email-icon"
               className="max-laptop:w-5"
@@ -79,7 +84,9 @@ function Footer() {
               placeholder="Enter Your Email"
               className="flex-1 placeholder:text-gray-09 placeholder:max-laptop:text-sm text-gray-09"
             />
-            <img
+            <Image
+              width={30}
+              height={30}
               src="/assets/images/sendIcon.svg"
               className="max-laptop:w-6"
               alt="send-icon"
@@ -161,7 +168,9 @@ function Footer() {
                 className="wrapper w-13 max-laptop:w-10 max-sm:w-15 aspect-square flex justify-center items-center rounded-full bg-gray-08"
                 key={i}
               >
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   src={e}
                   alt={e.split("/")[3].split(".")[0]}
                   className="max-laptop:w-5"

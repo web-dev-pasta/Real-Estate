@@ -1,4 +1,5 @@
 import Button from "@/components/button";
+import Image from "next/image";
 import React from "react";
 
 function PropertiesHero() {
@@ -57,7 +58,9 @@ function PropertiesHero() {
               className="flex items-center gap-2 max-md:rounded-lg"
               color="purple"
             >
-              <img
+              <Image
+                width={24}
+                height={24}
                 src="/assets/images/searchIcon.svg"
                 alt="search-icon"
                 className="aspect-square max-laptop:w-5"
@@ -79,7 +82,9 @@ function PropertiesHero() {
             >
               <div className="flex-1 flex gap-5 items-center max-md:gap-4">
                 <div className="image-wrapper relative">
-                  <img
+                  <Image
+                    width={24}
+                    height={24}
                     src={image}
                     alt={alt}
                     className="max-md:w-5 max-md:h-5"
@@ -91,7 +96,12 @@ function PropertiesHero() {
                 </p>
               </div>
               <div className="w-8 h-8 rounded-full flex justify-center items-center bg-gray-10">
-                <img src="/assets/images/arrowDown.svg" alt="arrow-down" />
+                <Image
+                  width={24}
+                  height={24}
+                  src="/assets/images/arrowDown.svg"
+                  alt="arrow-down"
+                />
               </div>
             </div>
           ))}

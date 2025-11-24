@@ -54,7 +54,9 @@ function PropertiesCard({ image, price, data, title, description }) {
                 className="border border-gray-15 bg-gray-10 text-white py-2 px-3.5 flex items-center gap-1 w-fit rounded-[28px] shrink-0 max-laptop:py-1.5 max-laptop:px-3.5 max-laptop:gap-1.5"
                 key={i}
               >
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   src={props[id].src}
                   alt={props[id].alt}
                   className="max-laptop:w-5"
