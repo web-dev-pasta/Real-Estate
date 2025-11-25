@@ -61,7 +61,11 @@ function MobileNav() {
                 key={i}
                 onClick={() => setActive(false)}
                 className={`text-center border py-2 rounded-sm text-white border-gray-15 transition-all delay-500 ${
-                  pathName === link ? "border-white/50" : ""
+                  (link === "/" && pathName === "/") ||
+                  (link !== "/" &&
+                    (pathName === link || pathName.startsWith(link)))
+                    ? "border-white/50"
+                    : ""
                 }`}
               >
                 {label}

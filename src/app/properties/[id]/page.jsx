@@ -96,12 +96,13 @@ async function SingleProperty({ params }) {
     return notFound();
   }
   const title = cards[id].title;
+  const price = cards[id].price;
 
   return (
     <>
       <Hero cards={cards} id={id} />
       <PropForm title={title} />
-      <Pricing />
+      <Pricing price={price} />
       <AskedQuestions />
       <CallToAction />
       <Footer />

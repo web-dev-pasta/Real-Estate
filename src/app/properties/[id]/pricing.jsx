@@ -1,9 +1,8 @@
 import Button from "@/components/button";
 import SpecialHeading from "@/components/special-heading";
 import PriceComponent from "./price-component";
-import { cn } from "@/lib/utils";
 
-export default function Pricing() {
+export default function Pricing({ price }) {
   const pricingData = [
     {
       title: "Additional Fees",
@@ -72,7 +71,7 @@ export default function Pricing() {
         [
           {
             title: "Listing Price",
-            aside: "$1,250,000",
+            aside: `$${price}`,
             border: true,
           },
           {
@@ -154,7 +153,7 @@ export default function Pricing() {
           <div className="flex flex-col gap-0.5 md:sticky top-5">
             <p className="gray_text">Listing Price</p>
             <p className="text-white font-semibold text-[40px] max-laptop:text-[30px] max-lg:text-[24px]">
-              $1,250,000
+              ${price}
             </p>
           </div>
 

@@ -8,6 +8,7 @@ function SpecialHeading({
   className,
   imageClass = "",
   grayClass = "",
+  smallDescription = "",
 }) {
   return (
     <div
@@ -28,11 +29,13 @@ function SpecialHeading({
       <p
         className={cn(
           "gray_text max-w-[1200px] max-laptop:max-w-[975px]",
-          grayClass
+          grayClass,
+          smallDescription && `max-sm:hidden`
         )}
       >
         {description}
       </p>
+      <p className={cn("gray_text sm:hidden", grayClass)}>{smallDescription}</p>
     </div>
   );
 }
