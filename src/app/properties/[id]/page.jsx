@@ -9,7 +9,11 @@ import imageEight from "@/../public/assets/images/properties-8.jpg";
 import imageNine from "@/../public/assets/images/properties-9.jpg";
 import Hero from "./hero";
 import { notFound } from "next/navigation";
-import PropForm from "./prop-form";
+import PropForm from "./form";
+import Pricing from "./pricing";
+import AskedQuestions from "@/app/_components/home/asked-questions";
+import CallToAction from "@/components/cta";
+import Footer from "@/components/footer";
 async function SingleProperty({ params }) {
   const resolvedParams = await params;
   const { id } = resolvedParams;
@@ -97,6 +101,10 @@ async function SingleProperty({ params }) {
     <>
       <Hero cards={cards} id={id} />
       <PropForm title={title} />
+      <Pricing />
+      <AskedQuestions />
+      <CallToAction />
+      <Footer />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import CallToAction from "@/components/cta";
-import PropertiesForm from "./properties-form";
-import PropertiesHero from "./properties-hero";
-import PropertiesPossibilities from "./properties-possibilities";
+import PropertiesForm from "./form";
+import PropertiesHero from "./hero";
+import PropertiesPossibilities from "./possibilities";
 import Footer from "@/components/footer";
 
 function Properties() {
