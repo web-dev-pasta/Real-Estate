@@ -1,0 +1,74 @@
+import Button from "@/components/button";
+import FormInput from "@/components/properties/form-input";
+import SpecialHeading from "@/components/special-heading";
+
+function ContactForm() {
+  const rowOne = [
+    { label: "First Name", placeholder: "Enter First Name" },
+    { label: "Last Name", placeholder: "Enter Last Name" },
+    { label: "Email", placeholder: "Enter Your Email" },
+  ];
+  const rowTwo = [
+    { label: "Phone", placeholder: "Enter Phone Number" },
+    { label: "Inquiry Type", placeholder: "Select Inquiry Type", id: 1 },
+
+    {
+      label: "How Did You Hear About Us?",
+      placeholder: "Select",
+      id: 1,
+    },
+  ];
+
+  return (
+    <section className="max_container mb-37.5 max-laptop:mb-30 max-sm:mb-20 flex flex-col gap-20">
+      <SpecialHeading
+        grayClass="max-w-[1297px]"
+        title="Let's Make it Happen"
+        description="Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together."
+      />
+      <form className="p-25 max-laptop:p-12.5 max-lg:p-5 border border-gray-15 rounded-xl flex flex-col gap-12.5 max-laptop:gap-7.5 max-lg:gap-5">
+        <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-12.5 max-laptop:gap-7.5 max-lg:gap-5">
+          {rowOne.map(({ label, placeholder }, i) => (
+            <FormInput key={i} label={label} placeholder={placeholder} />
+          ))}
+        </div>
+        <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-12.5 max-laptop:gap-7.5 max-lg:gap-5">
+          {rowTwo.map(({ label, placeholder, id }, i) => (
+            <FormInput
+              key={i}
+              label={label}
+              placeholder={placeholder}
+              id={id}
+              imageClass="max-laptop:w-5"
+            />
+          ))}
+        </div>
+
+        <div className="flex flex-col gap-4 justify-end">
+          <p className="text-xl font-semibold text-white max-laptop:text-[16px]">
+            Message
+          </p>
+
+          <textarea
+            className="resize-none border border-gray-15 rounded-xl placeholder:text-gray-40 placeholder:text-lg text-lg max-lg:text-sm max-lg:placeholder:text-sm text-gray-400 leading-none bg-gray-10 outline-none px-5 py-6 h-[170px] max-sm:h-22.5 max-sm:py-4"
+            placeholder="Enter your Message here.."
+          />
+        </div>
+        <div className="flex justify-between items-center gap-12.5 max-sm:flex-col max-sm:gap-5">
+          <div className="flex-1 flex items-center gap-2.5 max-sm:gap-1.5">
+            <span className="inline-block w-7 aspect-square max-laptop:w-6 border border-gray-15 bg-gray-10 rounded-sm"></span>
+            <p className="gray_text">
+              I agree with <span className="underline">Terms of Use</span> and{" "}
+              <span className="underline">Privacy Policy</span>
+            </p>
+          </div>
+          <Button color="purple" className="max-sm:w-full text-center">
+            Send Your Message
+          </Button>
+        </div>
+      </form>
+    </section>
+  );
+}
+
+export default ContactForm;

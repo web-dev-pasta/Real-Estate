@@ -3,8 +3,8 @@ import iconOne from "@/../public/assets/images/icon-1.svg";
 import iconTwo from "@/../public/assets/images/icon-2.svg";
 import iconThree from "@/../public/assets/images/icon-3.svg";
 import iconFour from "@/../public/assets/images/icon-4.svg";
-function FeatureIconsSection({ servicesDiv }) {
-  const features = [
+function FeatureIconsSection({ servicesDiv, contactFeatures }) {
+  const features = contactFeatures || [
     {
       icon: iconOne,
       label: "Find Your Dream Home",
