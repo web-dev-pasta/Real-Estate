@@ -4,7 +4,7 @@ const store = configureStore({
   reducer: {
     links: linksReducer,
   },
-  devTools: true,
+  devTools: false,
 });
 
 export default store;
