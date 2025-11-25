@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${urbanist.className} bg-gray-08`}>
         <ReduxProvider>
           <Header />
-          {children}
+          <main>{children}</main>
         </ReduxProvider>
       </body>
     </html>
