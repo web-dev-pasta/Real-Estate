@@ -82,7 +82,7 @@ function World() {
               height={e.height}
               key={i}
               alt={e.alt}
-              className={`rounded-[10px] w-full ${e.className}`}
+              className={`rounded-[10px] w-full! object-cover ${e.className}`}
             />
           );
         })}
