@@ -65,6 +65,7 @@ function Hero() {
           alt="hero-image"
           width={910}
           height={814}
+          priority
         />
         <div className="absolute top-30 -left-25 p-2 border rounded-full border-gray-15 bg-gray-08 z-10 max-lg:-bottom-15 max-lg:-left-px max-lg:top-[initial]">
           <div className="absolute top-1/2 left-1/2 transform -translate-1/2 text-white w-20 h-20 max-laptop:w-15 max-laptop:h-15 flex justify-center items-center">

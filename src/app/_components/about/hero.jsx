@@ -27,7 +27,7 @@ function AboutHero() {
         </div>
       </div>
       <div className="right flex-1 rounded-[10px] overflow-hidden border border-gray-15 relative">
-        <Image src={heroImage} alt="hero-about" />
+        <Image src={heroImage} alt="hero-about" priority />
         <div className="absolute inset-0 -z-10 opacity-20 max-lg:hidden">
           <Image
             src="/assets/images/aboutAbstractDesign.svg"
