@@ -21,6 +21,7 @@ function CallToAction() {
         <Button
           className="whitespace-nowrap max-sm:w-full text-center"
           color="purple"
+          link="/properties"
         >
           Explore Properties
         </Button>

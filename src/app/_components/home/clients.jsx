@@ -82,6 +82,7 @@ function Clients() {
       header="What Our Clients Say"
       description={`Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.`}
       buttonText="View All Testimonials"
+      id={"home-testimonials"}
     >
       <Slider cards={cards} buttonText="View All Testimonials" id={2} />
     </SwiperComponent>

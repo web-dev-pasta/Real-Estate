@@ -50,6 +50,7 @@ export default function Slider({ cards, id, buttonText }) {
             data={data}
             description={description}
             title={title}
+            id={i + 1}
           />
         </SwiperSlide>
       ));

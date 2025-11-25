@@ -14,7 +14,7 @@ function PropertiesPossibilities() {
     {
       id: 1,
       image: imageOne,
-      price: "125,000",
+      price: "550,000",
       title: "Seaside Serenity Villa",
       description:
         "A stunning 4-bedroom, 3-bathroom villa with open sea views, private garden, and modern interior.",
@@ -23,7 +23,7 @@ function PropertiesPossibilities() {
     {
       id: 2,
       image: imageTwo,
-      price: "650,000",
+      price: "450,000",
       title: "Metropolitan Haven",
       description:
         "A chic and fully-furnished 2-bedroom apartment located in the heart of the city with skyline views.",
@@ -32,7 +32,7 @@ function PropertiesPossibilities() {
     {
       id: 3,
       image: imageThree,
-      price: "350,000",
+      price: "500,000",
       title: "Rustic Retreat Cottage",
       description:
         "A cozy 3-bedroom cottage surrounded by greenery, featuring a spacious backyard and wooden décor.",

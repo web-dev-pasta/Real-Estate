@@ -10,7 +10,10 @@ function Hero() {
     { number: "16", text: "Years of Experience" },
   ];
   return (
-    <div className="grid grid-cols-2 max-laptop:gap-15 gap-20 bg-gray-08 min-h-[calc(100vh-100px)] max-laptop:min-h-[calc(100vh-76px)] items-center relative max-lg:grid-cols-1 max-lg:px-4 max-lg:pt-9">
+    <div
+      id="home-hero"
+      className="grid grid-cols-2 max-laptop:gap-15 gap-20 bg-gray-08 min-h-[calc(100vh-100px)] max-laptop:min-h-[calc(100vh-76px)] items-center relative max-lg:grid-cols-1 max-lg:px-4 max-lg:pt-9"
+    >
       <div className="max-lg:pl-0 pl-40 text-white flex flex-col gap-[60px] max-laptop:gap-[50px] max-laptop:pl-20 max-lg:order-1 max-lg:gap-10 max-lg:pb-10">
         <div className="flex flex-col gap-6 max-laptop:gap-5">
           <h1 className="text-white max-laptop:text-[46px] text-6xl font-semibold leading-tight max-sm:text-[28px]">
@@ -25,12 +28,14 @@ function Hero() {
           <Button
             color="black"
             className="max-sm:w-full max-lg:w-[250px] max-lg:text-center"
+            link="#home-featured"
           >
             Learn More
           </Button>
           <Button
             color="purple"
             className="max-sm:w-full max-lg:w-[250px] max-lg:text-center"
+            link="/properties"
           >
             Browse Properties
           </Button>
@@ -62,7 +67,7 @@ function Hero() {
           height={814}
         />
         <div className="absolute top-30 -left-25 p-2 border rounded-full border-gray-15 bg-gray-08 z-10 max-lg:-bottom-15 max-lg:-left-px max-lg:top-[initial]">
-          <div className="absolute top-1/2 left-1/2 transform -translate-1/2 text-white w-20 h-20 max-laptop:w-15 max-laptop:h-15">
+          <div className="absolute top-1/2 left-1/2 transform -translate-1/2 text-white w-20 h-20 max-laptop:w-15 max-laptop:h-15 flex justify-center items-center">
             <Image
               width={60}
               height={60}

@@ -90,6 +90,7 @@ function AskedQuestions() {
       header="Frequently Asked Questions"
       description={`Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.`}
       buttonText="View All FAQ’s"
+      id={"home-faq"}
       className="mb-24 max-laptop:mb-18 max-sm:mb-20"
     >
       <Slider cards={cards} buttonText="View All FAQ’s" id={3} />

@@ -7,11 +7,11 @@ function Footer() {
     {
       header: "Home",
       sections: [
-        { label: "Hero Section", link: "Hero Section" },
-        { label: "Features", link: "Features" },
-        { label: "Properties", link: "Properties" },
-        { label: "Testimonials", link: "Testimonials" },
-        { label: "FAQ's", link: "FAQ's" },
+        { label: "Hero Section", link: "#home-hero" },
+        { label: "Features", link: "#home-featured" },
+        { label: "Properties", link: "#home-properties" },
+        { label: "Testimonials", link: "#home-testimonials" },
+        { label: "FAQ's", link: "#home-faq" },
       ],
     },
     {
@@ -102,7 +102,7 @@ function Footer() {
               <div className="links flex flex-col gap-5">
                 {sections?.map(({ label, link }, i) => (
                   <Link
-                    href=""
+                    href={link}
                     className="text-white font-medium text-lg max-laptop:text-[16px]"
                     key={i}
                   >

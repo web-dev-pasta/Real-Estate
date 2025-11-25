@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "../button";
 
-function PropertiesCard({ image, price, data, title, description }) {
+function PropertiesCard({ image, price, data, title, description, id }) {
   const props = {
     1: {
       label: "Bedroom",
@@ -78,6 +78,7 @@ function PropertiesCard({ image, price, data, title, description }) {
           <Button
             color="purple"
             className="w-full whitespace-nowrap text-center"
+            link={`/properties/${id}`}
           >
             View Property Details
           </Button>

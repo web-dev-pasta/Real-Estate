@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 function Button({ children, link = "", color, className }) {
@@ -13,8 +14,15 @@ function Button({ children, link = "", color, className }) {
       usedColor = "bg-gray-10 border border-gray-15";
       break;
   }
+  const handleClick = (e) => {
+    if (!link) {
+      e.preventDefault();
+      return;
+    }
+  };
   return (
     <Link
+      onClick={handleClick}
       href={link}
       className={`max-lg:text-sm max-lg:px-5 max-lg:py-3.5 px-6 py-4.5 max-laptop:text-sm font-medium text-lg text-white rounded-[10px] max-laptop:px-5 max-laptop:py-3.5 ${usedColor} ${
         className || ""

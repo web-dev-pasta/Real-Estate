@@ -7,12 +7,14 @@ import Image from "next/image";
 
 function SwiperComponent({
   children,
+  id,
   className,
   header,
   description,
   buttonText,
   hiddenText = "",
   grayClass,
+  link,
 }) {
   return (
     <section
@@ -21,7 +23,10 @@ function SwiperComponent({
         className
       )}
     >
-      <div className="absolute w-[68px] h-7.5 -top-10 -left-5 max-large:left-0 max-laptop:left-1.5 max-laptop:-top-7.5 max-laptop:w-[54px]">
+      <div
+        id={id}
+        className="absolute w-[68px] h-7.5 -top-10 -left-5 max-large:left-0 max-laptop:left-1.5 max-laptop:-top-7.5 max-laptop:w-[54px]"
+      >
         <Image src={stars} alt="stars" width="auto" height="auto" />
       </div>
       <div className="header flex items-end justify-between gap-50 max-laptop:gap-[150px] mb-20 max-laptop:mb-15 max-sm:mb-10">
@@ -35,7 +40,11 @@ function SwiperComponent({
           </p>
         </div>
         {buttonText && (
-          <Button color="gray" className="whitespace-nowrap max-md:hidden">
+          <Button
+            color="gray"
+            className="whitespace-nowrap max-md:hidden"
+            link={link}
+          >
             {buttonText}
           </Button>
         )}
