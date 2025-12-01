@@ -44,7 +44,7 @@ function Hero({ cards, id }) {
     "Private garage and ample storage space",
   ];
   return (
-    <section className="max_container flex flex-col mt-30 mb-37.5 max-laptop:mt-20 max-laptop:mb-30 max-md:mt-15 max-sm:mb-20">
+    <section className="max_container flex_col mt-30 sm_mb max-laptop:mt-20 max-md:mt-15">
       <div className="flex items-center gap-12.5 mb-12.5 max-laptop:mb-10 max-md:mb-7.5">
         <div className="flex md:items-center gap-5 flex-1 max-md:flex-col max-md:gap-2.5">
           <p className="font-semibold text-[30px] text-white">
@@ -72,12 +72,12 @@ function Hero({ cards, id }) {
             </div>
           </span>
         </div>
-        <div className="flex flex-col gap-0.5 max-md:hidden">
+        <div className="flex_col gap-0.5 max-md:hidden">
           <p className="gray_text">Price</p>
           <p className="semi_bold_font">${cards[id].price}</p>
         </div>
       </div>
-      <div className="mb-7.5 max-laptop:mb-5 p-12.5 max-laptop:p-10 rounded-xl bg-gray-10 border border-gray-15 flex flex-col gap-7.5 max-laptop:gap-5 max-md:p-5">
+      <div className="mb-7.5 max-laptop:mb-5 p-12.5 max-laptop:p-10 rounded-xl bg-gray-10 border border-gray-15 flex_col gap-7.5 max-laptop:gap-5 max-md:p-5">
         <div className="bg-gray-08 border border-gray-15 rounded-xl p-5 flex gap-5 max-laptop:gap-2.5 max-laptop:p-2.5 max-large:flex-wrap max-[820px]:w-fit max-[820px]:mx-auto max-sm:flex-nowrap max-tiny-mobile:gap-0 max-tiny-mobile:w-full max-tiny-mobile:justify-between">
           <Image
             src={cards[id].image}
@@ -141,8 +141,8 @@ function Hero({ cards, id }) {
         </div>
       </div>
       <div className="grid grid-cols-2 gap-7.5 max-laptop:gap-5 items-start max-prop-custom:grid-cols-1">
-        <div className="p-12.5 max-laptop:p-10 flex flex-col gap-12.5 max-laptop:gap-10 border border-gray-15 rounded-xl max-laptop:rounded-[10px] max-sm:p-5 max-sm:gap-5">
-          <div className="text flex flex-col gap-3.5 max-laptop:gap-2.5">
+        <div className="p-12.5 max-laptop:p-10 flex_col gap-12.5 max-laptop:gap-10 border border-gray-15 rounded-xl max-laptop:rounded-[10px] max-sm:p-5 max-sm:gap-5">
+          <div className="text flex_col gap-3.5 max-laptop:gap-2.5">
             <p className="semi_bold_font">Description</p>
             <p className="gray_text">
               Discover your own piece of paradise with the Seaside Serenity
@@ -155,7 +155,7 @@ function Hero({ cards, id }) {
             {icons.map(({ label, number, icon, alt }, i) => (
               <div
                 key={i}
-                className={`flex flex-col gap-2.5 relative max-laptop:gap-2 ${
+                className={`flex_col gap-2.5 relative max-laptop:gap-2 ${
                   i === 2 &&
                   `max-sm:col-span-2 max-sm:pt-5 max-sm:border-t max-sm:border-gray-15`
                 }`}
@@ -178,11 +178,11 @@ function Hero({ cards, id }) {
             ))}
           </div>
         </div>
-        <div className="p-12.5 max-laptop:p-10 flex flex-col gap-12.5 max-laptop:gap-10 rounded-xl border border-gray-15 max-sm:p-5 max-sm:gap-5">
+        <div className="p-12.5 max-laptop:p-10 flex_col gap-12.5 max-laptop:gap-10 rounded-xl border border-gray-15 max-sm:p-5 max-sm:gap-5">
           <div className="title">
             <p className="semi_bold_font">Key Features and Amenities</p>
           </div>
-          <div className="flex flex-col gap-7.5 max-laptop:gap-5 max-sm:gap-4.5">
+          <div className="flex_col gap-7.5 max-laptop:gap-5 max-sm:gap-4.5">
             {text.map((e, i) => (
               <div
                 key={i}

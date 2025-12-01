@@ -26,7 +26,7 @@ function PropertiesCard({ image, price, data, title, description, id }) {
     },
   };
   return (
-    <div className="bg-gray-08 border border-gray-15 rounded-[10px] p-10 max-laptop:p-7.5 flex flex-col gap-7.5 max-laptop:gap-5 h-full max-sm:p-6 max-sm:gap-4">
+    <div className="bg-gray-08 border border-gray-15 rounded-[10px] p-10 max-laptop:p-7.5 flex_col gap-7.5 max-laptop:gap-5 h-full max-sm:p-6 max-sm:gap-4">
       <div className="image overflow-hidden rounded-[10px] h-80 max-laptop:h-[255px] max-sm:h-[210px] ">
         <Image
           src={image}
@@ -35,7 +35,7 @@ function PropertiesCard({ image, price, data, title, description, id }) {
         />
       </div>
 
-      <div className="flex flex-col max-laptop:gap-6 gap-7.5 max-sm:gap-5">
+      <div className="flex_col max-laptop:gap-6 gap-7.5 max-sm:gap-5">
         <div className="text space-y-1.5 max-laptop:space-y-1">
           <p className="text-white font-semibold text-2xl max-laptop:text-xl leading-normal!">
             {title}
@@ -71,7 +71,7 @@ function PropertiesCard({ image, price, data, title, description, id }) {
         )}
 
         <div className="price flex items-center gap-12.5 max-[1210px]:gap-7.5 max-tiny-mobile:flex-col max-tiny-mobile:gap-2.5!">
-          <div className="flex flex-col gap-0.5 max-tiny-mobile:items-center">
+          <div className="flex_col gap-0.5 max-tiny-mobile:items-center">
             <span className="gray_text max-laptop:text-[14px]">Price</span>
             <span className="semi_bold_font">${price}</span>
           </div>

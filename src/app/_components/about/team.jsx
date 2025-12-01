@@ -29,7 +29,7 @@ function AboutTeam() {
     },
   ];
   return (
-    <section className="mb-37.5 max-[1320px]:px-4 max-laptop:mb-30 max-sm:mb-20 max_container max-laptop:px-0 flex flex-col gap-20 max-laptop:gap-15 max-md:gap-10">
+    <section className="sm_mb max-[1320px]:px-4 max_container max-laptop:px-0 flex_col md_gap">
       <SpecialHeading
         title="Meet the Estatein Team"
         description="At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality."
@@ -38,7 +38,7 @@ function AboutTeam() {
         {data.map(({ image, name, role }, i) => (
           <div
             key={i}
-            className="rounded-xl p-7.5 border border-gray-15 flex flex-col gap-12.5 max-laptop:p-6 max-sm:p-5 max-sm:gap-10"
+            className="rounded-xl p-7.5 border border-gray-15 flex_col gap-12.5 max-laptop:p-6 max-sm:p-5 max-sm:gap-10"
           >
             <div className="relative">
               <Image
@@ -56,7 +56,7 @@ function AboutTeam() {
                 />
               </div>
             </div>
-            <div className="text flex flex-col gap-6 max-laptop:gap-5 max-sm:gap-4">
+            <div className="text flex_col gap-6 max-laptop:gap-5 max-sm:gap-4">
               <div className="top space-y-1.5 text-center max-laptop:space-y-1 max-sm:space-y-0.5">
                 <p className="semi_bold_font">{name}</p>
                 <p className="gray_text">{role}</p>

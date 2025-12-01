@@ -131,13 +131,13 @@ export default function Pricing({ price }) {
   ];
 
   return (
-    <section className="max_container flex flex-col gap-20 max-laptop:gap-15 max-sm:gap-10">
+    <section className="max_container flex_col sm_gap">
       <SpecialHeading
         grayClass="max-w-[1296px]"
         title="Comprehensive Pricing Details"
         description="At Estatein, transparency is key. We want you to have a clear understanding of all costs associated with your property investment. Below, we break down the pricing for Seaside Serenity Villa to help you make an informed decision"
       />
-      <div className="flex flex-col gap-12.5 max-laptop:gap-10 max-sm:gap-7.5">
+      <div className="flex_col gap-12.5 max-laptop:gap-10 max-sm:gap-7.5">
         <div className="rounded-xl border border-gray-15 bg-gray-10 py-7.5 px-12.5 flex sm:items-center gap-10 max-laptop:px-10 max-laptop:py-5 max-laptop:gap-8 max-sm:gap-0 max-sm:flex-col max-sm:px-5 max-sm:py-6 max-sm:rounded-lg">
           <div className="relative max-sm:pb-2.5 max-sm:border-b max-sm:border-gray-15">
             <p className="semi_bold_font">Note</p>
@@ -150,18 +150,18 @@ export default function Pricing({ price }) {
         </div>
 
         <div className="flex items-start gap-12.5 max-laptop:gap-10 max-lg:flex-col max-md:gap-5">
-          <div className="flex flex-col gap-0.5 md:sticky top-5">
+          <div className="flex_col gap-0.5 md:sticky top-5">
             <p className="gray_text">Listing Price</p>
             <p className="text-white font-semibold text-[40px] max-laptop:text-[30px] max-lg:text-[24px]">
               ${price}
             </p>
           </div>
 
-          <div className="flex flex-col gap-12.5 max-laptop:gap-10 max-md:gap-5 w-full">
+          <div className="flex_col gap-12.5 max-laptop:gap-10 max-md:gap-5 w-full">
             {pricingData.map((section) => (
               <div
                 key={section.title}
-                className="p-12.5 border rounded-xl border-gray-15 flex flex-col gap-20 max-laptop:p-10 max-laptop:gap-15 max-md:p-5 max-md:gap-0"
+                className="p-12.5 border rounded-xl border-gray-15 flex_col gap-20 max-laptop:p-10 max-laptop:gap-15 max-md:p-5 max-md:gap-0"
               >
                 <div className="flex justify-between items-center gap-10 relative max-md:pb-5 max-md:border-b max-md:border-gray-15">
                   <p className="semi_bold_font flex-1">{section.title}</p>

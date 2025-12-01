@@ -42,7 +42,7 @@ function Management() {
     },
   ];
   return (
-    <section className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 max_container flex flex-col gap-20 max-laptop:gap-15 max-md:gap-10">
+    <section className="sm_mb max_container flex_col md_gap">
       <SpecialHeading
         title="Effortless Property Management"
         description="Owning a property should be a pleasure, not a hassle. Estatein's Property Management Service takes the stress out of property ownership, offering comprehensive solutions tailored to your needs. Explore the categories below to see how we can make property management effortless for you"
@@ -54,7 +54,7 @@ function Management() {
             return (
               <div
                 key={index}
-                className={`p-12.5 bg-gray-10 rounded-xl max-laptop:p-10 max-laptop:rounded-[10px] border border-gray-15 flex flex-col gap-7.5 ${item.className} relative max-laptop:gap-5 max-md:p-6`}
+                className={`p-12.5 bg-gray-10 rounded-xl max-laptop:p-10 max-laptop:rounded-[10px] border border-gray-15 flex_col gap-7.5 ${item.className} relative max-laptop:gap-5 max-md:p-6`}
               >
                 <div className="button flex items-center gap-5 relative z-10 max-laptop:gap-3.5 max-md:flex-col max-md:gap-5">
                   <p className="flex-1 font-semibold text-[30px] max-laptop:text-2xl leading-normal text-white max-md:text-xl">
@@ -85,7 +85,7 @@ function Management() {
 
           return (
             <div
-              className="p-12.5 rounded-xl max-laptop:rounded-[10px] border border-gray-15 flex flex-col gap-7.5 max-laptop:p-10 max-laptop:gap-5 max-md:p-6 max-md:gap-4"
+              className="p-12.5 rounded-xl max-laptop:rounded-[10px] border border-gray-15 flex_col gap-7.5 max-laptop:p-10 max-laptop:gap-5 max-md:p-6 max-md:gap-4"
               key={index}
             >
               <div className="flex items-center gap-5 max-laptop:gap-4 max-md:gap-2.5">

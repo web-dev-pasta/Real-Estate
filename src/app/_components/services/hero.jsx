@@ -3,9 +3,9 @@ import FeatureIconsSection from "../home/feature-icons";
 
 function Hero() {
   return (
-    <section className="mb-37.5 max-laptop:mb-30 max-md:mb-20">
+    <section className="md_mb">
       <div className="relative">
-        <div className="max_container pt-37.5 pb-25 flex flex-col gap-3.5 max-laptop:pt-25 max-laptop:pb-25 max-laptop:gap-2.5 max-md:py-12.5">
+        <div className="max_container pt-37.5 pb-25 flex_col gap-3.5 max-laptop:pt-25 max-laptop:pb-25 max-laptop:gap-2.5 max-md:py-12.5">
           <p className="large_text">Elevate Your Real Estate Experience</p>
           <p className="gray_text max-w-[1358px] max-laptop:max-w-[1160px]">
             Welcome to Estatein, where your real estate aspirations meet expert

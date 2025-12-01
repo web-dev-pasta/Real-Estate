@@ -13,7 +13,7 @@ function SpecialHeading({
   return (
     <div
       className={cn(
-        "text flex flex-col gap-3.5 max-laptop:gap-2.5 max-sm:gap-2 relative",
+        "text flex_col gap-3.5 max-laptop:gap-2.5 max-sm:gap-2 relative",
         className
       )}
     >

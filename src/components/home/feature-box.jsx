@@ -3,7 +3,7 @@ import topRightArrow from "@/../public/assets/images/topRightArrow.svg";
 function FeatureBox({ label, icon }) {
   const isArray = typeof label === "object";
   return (
-    <div className="border border-gray-15 bg-gray-10 rounded-xl px-5 py-10 flex flex-col gap-5 relative items-center max-laptop:gap-4 max-laptop:px-4 max-laptop:py-7.5 max-sm:px-3.5 max-sm:py-5 max-sm:rounded-[10px]">
+    <div className="border border-gray-15 bg-gray-10 rounded-xl px-5 py-10 flex_col gap-5 relative items-center max-laptop:gap-4 max-laptop:px-4 max-laptop:py-7.5 max-sm:px-3.5 max-sm:py-5 max-sm:rounded-[10px]">
       <span className="aspect-square w-[82px] max-laptop:w-15 max-sm:w-12">
         <Image src={icon} alt={icon} width={82} height={82} />
       </span>

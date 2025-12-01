@@ -13,9 +13,9 @@ function ClientsBox({ date, title, domain, category, comment }) {
   ];
   return (
     <div className="p-2 rounded-xl bg-gray-10 max-sm:p-1.5 h-full">
-      <div className="p-12.5 max-laptop:p-10 max-sm:p-6 bg-gray-08 flex flex-col gap-10 max-laptop:gap-7.5 rounded-xl border border-gray-15 relative h-full justify-between max-sm:gap-7.5">
+      <div className="p-12.5 max-laptop:p-10 max-sm:p-6 bg-gray-08 flex_col gap-10 max-laptop:gap-7.5 rounded-xl border border-gray-15 relative h-full justify-between max-sm:gap-7.5">
         <div className="flex sm:items-center gap-7.5 max-laptop:gap-5 max-sm:flex-col max-sm:gap-5">
-          <div className="flex flex-col gap-1.5 flex-1 max-laptop:gap-1">
+          <div className="flex_col gap-1.5 flex-1 max-laptop:gap-1">
             <p className="gray_text">Since {date}</p>
             <p className="font-semibold text-3xl max-laptop:text-2xl leading-normal text-white max-sm:text-[20px]">
               {title}
@@ -28,7 +28,7 @@ function ClientsBox({ date, title, domain, category, comment }) {
         <div className="flex items-center gap-15 max-laptop:gap-10 max-sm:gap-8">
           {data.map(({ image, label, text }, i) => (
             <div
-              className="flex flex-col gap-2 max-laptop:gap-1.5 relative flex-1"
+              className="flex_col gap-2 max-laptop:gap-1.5 relative flex-1"
               key={i}
             >
               <div className="flex items-center gap-1.5 max-laptop:gap-1">

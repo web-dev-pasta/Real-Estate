@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function ClientCard({ title, description, image, alt, name, location }) {
   return (
-    <div className="rounded-xl border border-gray-15 p-12.5 max-laptop:p-10 max-sm:p-7.5 flex flex-col gap-10 max-laptop:gap-7.5 h-full max-sm:gap-6">
+    <div className="rounded-xl border border-gray-15 p-12.5 max-laptop:p-10 max-sm:p-7.5 flex_col gap-10 max-laptop:gap-7.5 h-full max-sm:gap-6">
       <div className="stars flex gap-2.5 max-laptop:gap-2">
         {new Array(5).fill(0).map((_, i) => (
           <div
@@ -19,7 +19,7 @@ function ClientCard({ title, description, image, alt, name, location }) {
           </div>
         ))}
       </div>
-      <div className="text flex flex-col gap-2.5 flex-1   ">
+      <div className="text flex_col gap-2.5 flex-1   ">
         <div>
           <p className="semi_bold_font">{title}</p>
         </div>

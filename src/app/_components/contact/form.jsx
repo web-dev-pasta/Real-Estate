@@ -20,13 +20,13 @@ function ContactForm() {
   ];
 
   return (
-    <section className="max_container mb-37.5 max-laptop:mb-30 max-sm:mb-20 flex flex-col gap-20">
+    <section className="max_container sm_mb flex_col sm_gap">
       <SpecialHeading
         grayClass="max-w-[1297px]"
         title="Let's Make it Happen"
         description="Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together."
       />
-      <form className="p-25 max-laptop:p-12.5 max-lg:p-5 border border-gray-15 rounded-xl flex flex-col gap-12.5 max-laptop:gap-7.5 max-lg:gap-5">
+      <form className="p-25 max-laptop:p-12.5 max-lg:p-5 border border-gray-15 rounded-xl flex_col gap-12.5 max-laptop:gap-7.5 max-lg:gap-5">
         <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-12.5 max-laptop:gap-7.5 max-lg:gap-5">
           {rowOne.map(({ label, placeholder }, i) => (
             <FormInput key={i} label={label} placeholder={placeholder} />
@@ -44,7 +44,7 @@ function ContactForm() {
           ))}
         </div>
 
-        <div className="flex flex-col gap-4 justify-end">
+        <div className="flex_col gap-4 justify-end">
           <p className="text-xl font-semibold text-white max-laptop:text-[16px]">
             Message
           </p>

@@ -21,7 +21,7 @@ function AboutAchievements() {
     },
   ];
   return (
-    <section className="mb-37.5 max-[1320px]:px-4 max-laptop:mb-30 max-sm:mb-20 max_container max-laptop:px-0 flex flex-col gap-20 max-laptop:gap-15 max-md:gap-10">
+    <section className="sm_mb max-[1320px]:px-4 max_container max-laptop:px-0 flex_col md_gap">
       <SpecialHeading
         title="Our Achievements"
         description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
@@ -30,7 +30,7 @@ function AboutAchievements() {
         {data.map(({ title, description, laptopText }, i) => (
           <div
             key={i}
-            className="max-sm:gap-5 p-12.5 flex flex-col gap-7.5 max-laptop:gap-6 max-laptop:rounded-[10px] max-laptop:p-10 border border-gray-15 rounded-xl relative bg-gray-08 max-sm:p-7.5"
+            className="max-sm:gap-5 p-12.5 flex_col gap-7.5 max-laptop:gap-6 max-laptop:rounded-[10px] max-laptop:p-10 border border-gray-15 rounded-xl relative bg-gray-08 max-sm:p-7.5"
           >
             <p className="font-semibold text-3xl max-laptop:text-2xl leading-normal text-white max-sm:text-[20px]">
               {title}

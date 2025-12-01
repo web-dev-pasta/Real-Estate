@@ -34,7 +34,7 @@ function AboutNavigating() {
     },
   ];
   return (
-    <section className="mb-37.5 max-[1320px]:px-4 max-laptop:mb-30 max-sm:mb-20 max_container max-laptop:px-0 flex flex-col gap-20 max-laptop:gap-15 max-md:gap-10">
+    <section className="sm_mb max-[1320px]:px-4 max_container max-laptop:px-0 flex_col md_gap">
       <SpecialHeading
         description="At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works."
         title="Navigating the Estatein Experience"
@@ -42,13 +42,13 @@ function AboutNavigating() {
       <div className="grid grid-cols-3 grid-rows-2 gap-x-7.5 gap-y-12.5 max-laptop:gap-x-5 max-laptop:gap-y-10 max-xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] max-md:grid-cols-1 max-sm:gap-7.5">
         {data.map(({ title, description }, i) => (
           <div
-            className={`relative flex flex-col ${i > 2 && "max-sm:hidden"}`}
+            className={`relative flex_col ${i > 2 && "max-sm:hidden"}`}
             key={i}
           >
             <div className="px-5 py-4 max-laptop:px-4 max-laptop:py-3.5 text-white font-medium text-xl border-l border-purple-60 max-laptop:text-[16px]">
               Step {String(i + 1).padStart(2, "0")}
             </div>
-            <div className="p-12.5 flex flex-col gap-5 max-laptop:gap-4 rounded-tl-none! rounded-xl max-laptop:rounded-[10px] border border-gray-15 relative overflow-hidden flex-1 max-laptop:p-10 max-md:p-7.5 max-sm:gap-3.5">
+            <div className="p-12.5 flex_col gap-5 max-laptop:gap-4 rounded-tl-none! rounded-xl max-laptop:rounded-[10px] border border-gray-15 relative overflow-hidden flex-1 max-laptop:p-10 max-md:p-7.5 max-sm:gap-3.5">
               <p className="font-semibold text-[26px] leading-none text-white max-laptop:text-xl">
                 {title}
               </p>

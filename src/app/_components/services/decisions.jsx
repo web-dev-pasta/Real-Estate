@@ -34,15 +34,15 @@ function Decisions() {
     },
   ];
   return (
-    <section className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 max_container grid gap-15 max-laptop:gap-12.5 max-md:gap-10 grid-cols-[519px_1fr] max-laptop:grid-cols-[412px_1fr] max-lg:grid-cols-1">
-      <div className="flex flex-col gap-12.5 max-laptop:gap-10 max-sm:gap-7.5">
+    <section className="sm_mb max_container grid gap-15 max-laptop:gap-12.5 max-md:gap-10 grid-cols-[519px_1fr] max-laptop:grid-cols-[412px_1fr] max-lg:grid-cols-1">
+      <div className="flex_col gap-12.5 max-laptop:gap-10 max-sm:gap-7.5">
         <SpecialHeading
           title="Smart Investments, Informed Decisions"
           description="Building a real estate portfolio requires a strategic approach. Estatein's Investment Advisory Service empowers you to make smart investments and informed decisions."
           smallDescription="Building a real estate portfolio requires a strategic approach."
         />
         <div
-          className={`p-12.5 bg-gray-10 rounded-xl max-laptop:p-10 max-laptop:rounded-[10px] border border-gray-15 flex flex-col gap-7.5 relative max-laptop:gap-5 max-md:p-6`}
+          className={`p-12.5 bg-gray-10 rounded-xl max-laptop:p-10 max-laptop:rounded-[10px] border border-gray-15 flex_col gap-7.5 relative max-laptop:gap-5 max-md:p-6`}
         >
           <div className="button laptop:flex items-center gap-5 relative z-10 ">
             <p className="flex-1 semi_bold_font">
@@ -86,7 +86,7 @@ function Decisions() {
       <div className="p-2.5 bg-gray-10 rounded-xl grid grid-cols-2 gap-2.5 max-xl:grid-cols-1">
         {firstIcons.map((item, index) => (
           <div
-            className="p-12.5 rounded-xl max-laptop:rounded-[10px] border bg-gray-08 border-gray-15 flex flex-col gap-7.5 max-laptop:p-10 max-laptop:gap-6 max-md:p-6 max-md:gap-4"
+            className="p-12.5 rounded-xl max-laptop:rounded-[10px] border bg-gray-08 border-gray-15 flex_col gap-7.5 max-laptop:p-10 max-laptop:gap-6 max-md:p-6 max-md:gap-4"
             key={index}
           >
             <div className="flex items-center gap-5 max-laptop:gap-4 max-md:gap-3">

@@ -34,7 +34,7 @@ function AboutValues() {
     },
   ];
   return (
-    <section className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 max_container flex gap-20 max-laptop:gap-15 max-lg:flex-col md:items-center max-md:gap-10 relative">
+    <section className="sm_mb max_container flex gap-20 max-laptop:gap-15 max-lg:flex-col md:items-center max-md:gap-10 relative">
       <SpecialHeading
         title="Our Values"
         className="max-w-[517px] max-laptop:max-w-[413px] md:text-center lg:text-start"
@@ -43,7 +43,7 @@ function AboutValues() {
       <div className="p-15 max-laptop:p-12.5 max-md:p-6 border rounded-xl border-gray-15 max-md:grid-rows-none relative grid grid-cols-2 grid-rows-2 gap-15 max-laptop:gap-12 max-md:grid-cols-1 max-md:gap-0">
         {data.map(({ title, description, image, alt }, i) => (
           <div
-            className={`flex flex-col gap-5 max-laptop:gap-4 max-md:gap-3.5 md:justify-between relative max-md:py-5 ${
+            className={`flex_col gap-5 max-laptop:gap-4 max-md:gap-3.5 md:justify-between relative max-md:py-5 ${
               i === 0 ? `pt-0!` : ``
             } ${i == 3 ? `pb-0!` : ` max-md:border-b border-gray-15`} `}
             key={i}

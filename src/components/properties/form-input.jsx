@@ -12,10 +12,7 @@ function FormInput({
 }) {
   return (
     <div
-      className={cn(
-        "flex flex-col gap-4 justify-end max-laptop:gap-3.5",
-        className
-      )}
+      className={cn("flex_col gap-4 justify-end max-laptop:gap-3.5", className)}
     >
       <p className="text-xl font-semibold text-white max-laptop:text-[16px]">
         {label}

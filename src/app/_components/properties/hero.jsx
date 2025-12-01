@@ -34,7 +34,7 @@ function PropertiesHero() {
   return (
     <section className="relative mb-[307px] max-laptop:mb-[225px] max-[1210px]:mb-[303px] max-md:mb-20">
       <div className="border-b border-gray-15 relative">
-        <div className="max_container pt-37.5 pb-40 flex flex-col gap-3.5 max-laptop:pt-25 max-laptop:pb-32.5 max-laptop:gap-2.5 max-md:py-12.5">
+        <div className="max_container pt-37.5 pb-40 flex_col gap-3.5 max-laptop:pt-25 max-laptop:pb-32.5 max-laptop:gap-2.5 max-md:py-12.5">
           <p className="large_text">Find Your Dream Property</p>
           <p className="gray_text max-w-[1358px] max-laptop:max-w-[1160px]">
             Welcome to Estatein, where your dream property awaits in every
@@ -45,7 +45,7 @@ function PropertiesHero() {
         </div>
         <div className="absolute bg-[linear-gradient(120deg,rgba(38,38,38,1)_0%,rgba(38,38,38,0)_53%)] w-full h-full -z-10 top-0 -left-[300px] max-lg:left-0"></div>
       </div>
-      <div className="max_container flex flex-col gap-2.5 max-laptop:gap-0.5 max-md:gap-5 md:absolute max-md:mt-10 z-10 top-full left-1/2 md:transform md:-translate-x-1/2 w-full md:-translate-y-[52px]  ">
+      <div className="max_container flex_col gap-2.5 max-laptop:gap-0.5 max-md:gap-5 md:absolute max-md:mt-10 z-10 top-full left-1/2 md:transform md:-translate-x-1/2 w-full md:-translate-y-[52px]  ">
         <div className="md:px-37">
           <div className="py-5 pl-6 pr-5 max-laptop:pl-5 max-laptop:py-4 max-laptop:pr-4 max-md:py-2.5 max-md:pr-2.5 max-md:pl-4.5 flex items-center max-md:rounded-xl rounded-t-xl gap-12.5 bg-gray-08 relative border border-gray-15">
             <div className="flex-1">

@@ -38,6 +38,21 @@ html {
   .large_text {
     @apply text-5xl font-semibold text-white max-laptop:text-[38px] leading-normal max-sm:text-[28px];
   }
+  .md_gap {
+    @apply gap-20 max-laptop:gap-15 max-md:gap-10;
+  }
+  .flex_col {
+    @apply flex flex-col;
+  }
+  .sm_gap {
+    @apply gap-20 max-laptop:gap-15 max-sm:gap-10;
+  }
+  .md_mb {
+    @apply mb-37.5 max-laptop:mb-30 max-md:mb-20;
+  }
+  .sm_mb {
+    @apply mb-37.5 max-laptop:mb-30 max-sm:mb-20;
+  }
 }
 
 .custom-scroll::-webkit-scrollbar {

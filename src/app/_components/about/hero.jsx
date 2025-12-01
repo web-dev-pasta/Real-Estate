@@ -10,8 +10,8 @@ function AboutHero() {
     { number: "16", text: "Years of Experience" },
   ];
   return (
-    <section className="mb-37.5 max-laptop:mb-30 max-sm:mb-20 mt-25 max-laptop:mt-17.5 max-lg:mt-12.5 max-sm:gap-10 max_container flex items-center gap-20 max-laptop:gap-15 max-lg:flex-col-reverse">
-      <div className="left flex-1 flex flex-col gap-20 py-[67px] max-laptop:gap-12.5 max-sm:gap-10 max-laptop:py-[55px] max-lg:py-0">
+    <section className="sm_mb mt-25 max-laptop:mt-17.5 max-lg:mt-12.5 max-sm:gap-10 max_container flex items-center gap-20 max-laptop:gap-15 max-lg:flex-col-reverse">
+      <div className="left flex-1 flex_col gap-20 py-[67px] max-laptop:gap-12.5 max-sm:gap-10 max-laptop:py-[55px] max-lg:py-0">
         <SpecialHeading
           title="Our Journey"
           description="Our story is one of continuous growth and evolution. We started as a

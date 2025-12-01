@@ -95,11 +95,11 @@ function Footer() {
         </div>
         <nav className="links flex justify-between items-start w-full max-sm:hidden">
           {links.map(({ header, sections }, i) => (
-            <div key={i} className="flex flex-col gap-7.5 max-laptop:gap-6">
+            <div key={i} className="flex_col gap-7.5 max-laptop:gap-6">
               <div className="header text-xl font-medium text-gray-09 max-laptop:text-lg">
                 {header}
               </div>
-              <div className="links flex flex-col gap-5">
+              <div className="links flex_col gap-5">
                 {sections?.map(({ label, link }, i) => (
                   <Link
                     href={link}
@@ -116,14 +116,11 @@ function Footer() {
         <nav className="links flex w-full sm:hidden">
           <div className="left pr-5 flex-1">
             {leftLinks.map(({ header, sections }, i) => (
-              <div
-                key={i}
-                className={`flex flex-col gap-4 ${i !== 0 && "mt-5"}`}
-              >
+              <div key={i} className={`flex_col gap-4 ${i !== 0 && "mt-5"}`}>
                 <div className="font-medium text-gray-09 text-[16px]">
                   {header}
                 </div>
-                <div className="flex flex-col gap-2 pb-5 border-b border-gray-15">
+                <div className="flex_col gap-2 pb-5 border-b border-gray-15">
                   {sections.map(({ label, link }, i) => (
                     <Link href="" className="text-white text-sm" key={i}>
                       {label}
@@ -137,14 +134,14 @@ function Footer() {
             {rightLinks.map(({ header, sections }, i) => (
               <div
                 key={i}
-                className={`flex flex-col gap-4 ${i !== 0 && "mt-5"} relative`}
+                className={`flex_col gap-4 ${i !== 0 && "mt-5"} relative`}
               >
                 <div className="absolute -left-[21px] top-0 bottom-0 w-px bg-gray-15"></div>
 
                 <div className="font-medium text-gray-09 text-[16px]">
                   {header}
                 </div>
-                <div className="flex flex-col gap-2 pb-5 border-b border-gray-15">
+                <div className="flex_col gap-2 pb-5 border-b border-gray-15">
                   {sections.map(({ label, link }, i) => (
                     <Link href="" className="text-white text-sm" key={i}>
                       {label}

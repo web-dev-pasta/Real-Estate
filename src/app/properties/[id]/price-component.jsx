@@ -12,9 +12,7 @@ function PriceComponent({
   roundedClass,
 }) {
   return (
-    <div
-      className={cn("flex flex-col gap-4 relative max-md:gap-2.5", className)}
-    >
+    <div className={cn("flex_col gap-4 relative max-md:gap-2.5", className)}>
       <p className="gray_text">{title}</p>
       <div className="flex gap-4 items-center max-md:gap-3">
         <p className={cn("semi_bold_font", asideClass)}>{aside}</p>

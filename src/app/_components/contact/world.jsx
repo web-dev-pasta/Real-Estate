@@ -65,7 +65,7 @@ function World() {
   ];
 
   return (
-    <section className="max_container mb-37.5 max-laptop:mb-30 max-md:mb-20">
+    <section className="max_container md_mb">
       <div className="relative p-20 max-laptop:p-15 rounded-xl border border-gray-15 grid grid-cols-4 gap-5 max-md:gap-2.5 max-lg:grid-cols-2 max-md:grid-cols-4 max-md:p-6">
         {boxes.map((e, i) => {
           if (e.type === "component") {

@@ -36,14 +36,14 @@ function Discover() {
     },
   ];
   return (
-    <section className="max_container mb-37.5 max-laptop:mb-30 max-sm:mb-20 flex flex-col gap-20 max-laptop:gap-15 max-sm:gap-10">
+    <section className="max_container sm_mb flex_col sm_gap">
       <SpecialHeading
         grayClass="max-w-[1297px]"
         title="Discover Our Office Locations"
         description="Estatein is here to serve you across multiple locations. Whether you're looking to meet our team, discuss real estate opportunities, or simply drop by for a chat, we have offices conveniently located to serve your needs. Explore the categories below to find the Estatein office nearest to you"
         smallDescription="Estatein is here to serve you across multiple locations. Whether you're looking to meet our team."
       />
-      <div className="flex flex-col gap-12.5 max-laptop:gap-10 max-sm:gap-7.5">
+      <div className="flex_col gap-12.5 max-laptop:gap-10 max-sm:gap-7.5">
         <div className="p-2.5 rounded-xl flex *:flex-1 gap-2.5 bg-gray-10 w-[516px] max-laptop:w-[413px] max-sm:mx-auto max-sm:rounded-lg max-sm:w-full">
           {categories.map((e, i) => (
             <span
@@ -59,11 +59,11 @@ function Discover() {
         <div className="grid grid-cols-2 gap-7.5 max-laptop:gap-5 max-lg:grid-cols-1 ">
           {cards.map(({ info, title, description }, i) => (
             <div
-              className="p-12.5 max-laptop:p-10 flex flex-col gap-10 rounded-xl border border-gray-15 max-laptop:gap-7.5 max-sm:p-6 max-sm:gap-6"
+              className="p-12.5 max-laptop:p-10 flex_col gap-10 rounded-xl border border-gray-15 max-laptop:gap-7.5 max-sm:p-6 max-sm:gap-6"
               key={i}
             >
-              <div className="text flex flex-col gap-3.5 flex-1 max-sm:gap-2">
-                <div className="first flex flex-col gap-2.5 max-laptop:gap-1.5 max-sm:gap-1">
+              <div className="text flex_col gap-3.5 flex-1 max-sm:gap-2">
+                <div className="first flex_col gap-2.5 max-laptop:gap-1.5 max-sm:gap-1">
                   <p className="text-lg font-medium leading-normal text-white max-laptop:text-sm">
                     {info}
                   </p>

@@ -53,7 +53,7 @@ function MobileNav() {
             />
           </button>
         </div>
-        <div className="flex flex-col gap-3 mt-5">
+        <div className="flex_col gap-3 mt-5">
           {allLinks.map(({ label, link }, i) => {
             return (
               <Link

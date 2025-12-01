@@ -6,14 +6,14 @@ import React from "react";
 
 function PropForm({ title }) {
   return (
-    <section className="max_container mb-37.5 max-laptop:mb-30 max-sm:mb-20">
+    <section className="max_container sm_mb">
       <div className="grid gap-25 grid-cols-[auto_1fr] max-laptop:gap-20 max-prop-custom:grid-cols-1 max-md:gap-10">
         <SpecialHeading
           title={`Inquire About ${title}`}
           description="Interested in this property? Fill out the form below, and our real estate experts will get back to you with more details, including scheduling a viewing and answering any questions you may have."
           className="max-w-[519px] max-laptop:max-w-[412px]"
         />
-        <div className="p-12.5 rounded-xl border border-gray-15 flex flex-col gap-12.5 max-laptop:gap-10 max-prop-custom:p-5 max-md:gap-5">
+        <div className="p-12.5 rounded-xl border border-gray-15 flex_col gap-12.5 max-laptop:gap-10 max-prop-custom:p-5 max-md:gap-5">
           <div className="grid grid-cols-2 gap-7.5 max-laptop:gap-5 *:col-span-2 max-md:grid-cols-1  max-md:gap-5">
             <div className="flex *:flex-1 gap-7.5 max-md:flex-col max-md:gap-5">
               <FormInput label="First Name" placeholder="Enter First Name" />
@@ -23,7 +23,7 @@ function PropForm({ title }) {
               <FormInput label="Email" placeholder="Enter Your Email" />
               <FormInput label="Phone" placeholder="Enter Phone Number" />
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex_col gap-4">
               <p className="text-xl font-semibold text-white max-laptop:text-[16px]">
                 Selected Property
               </p>
@@ -40,7 +40,7 @@ function PropForm({ title }) {
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-4 justify-end">
+            <div className="flex_col gap-4 justify-end">
               <p className="text-xl font-semibold text-white max-laptop:text-[16px]">
                 Message
               </p>
