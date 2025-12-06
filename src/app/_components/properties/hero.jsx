@@ -87,7 +87,7 @@ function PropertiesHero() {
                     height={24}
                     src={image}
                     alt={alt}
-                    className="max-md:w-5 max-md:h-5"
+                    className="max-md:w-5 md:min-w-6 "
                   />
                   <div className="absolute inset-y-0 w-px bg-gray-15 -right-2.5 max-laptop:-right-2"></div>
                 </div>
@@ -112,3 +112,4 @@ function PropertiesHero() {
 }
 
 export default PropertiesHero;
+

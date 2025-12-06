@@ -44,25 +44,15 @@ function Decisions() {
         <div
           className={`p-12.5 bg-gray-10 rounded-xl max-laptop:p-10 max-laptop:rounded-[10px] border border-gray-15 flex_col gap-7.5 relative max-laptop:gap-5 max-md:p-6`}
         >
-          <div className="button laptop:flex items-center gap-5 relative z-10 ">
-            <p className="flex-1 semi_bold_font">
-              Unlock Your Investment Potential
-            </p>
-            <Button
-              color="black"
-              className="max-md:w-full text-center max-laptop:hidden"
-            >
-              Learn More
-            </Button>
-          </div>
+          <p className="flex-1 semi_bold_font relative z-10">
+            Unlock Your Investment Potential
+          </p>
+
           <p className="text-lg max-laptop:text-[16px] font-medium text-white relative z-10 max-sm:text-sm max-sm:text-gray-09">
             Explore our Property Management Service categories and let us handle
             the complexities while you enjoy the benefits of property ownership.
           </p>
-          <Button
-            color="black"
-            className="text-center w-full laptop:hidden relative z-10"
-          >
+          <Button color="black" className="text-center w-full relative z-10">
             Learn More
           </Button>
           <div className="absolute inset-0 max-laptop:hidden">

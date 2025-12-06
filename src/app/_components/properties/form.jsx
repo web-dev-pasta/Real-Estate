@@ -1,4 +1,6 @@
 import Button from "@/components/button";
+import FormAgree from "@/components/form-agree";
+import DropDownInput from "@/components/properties/drop-down-input";
 import FormInput from "@/components/properties/form-input";
 import SpecialHeading from "@/components/special-heading";
 import React from "react";
@@ -11,17 +13,29 @@ function PropertiesForm() {
     { label: "Phone", placeholder: "Enter Phone Number" },
   ];
   const rowTwo = [
-    { label: "Preferred Location", placeholder: "Select Location", id: 1 },
-    { label: "Property Type", placeholder: "Select Property Type", id: 1 },
+    {
+      label: "Preferred Location",
+      placeholder: "Select Location",
+      id: 1,
+      dropDownItems: ["United States", "California"],
+    },
+    {
+      label: "Property Type",
+      placeholder: "Select Property Type",
+      id: 1,
+      dropDownItems: ["Home", "Villa", "Condos", "Town House"],
+    },
     {
       label: "No. of Bathrooms",
       placeholder: "Select no. of Bathrooms",
       id: 1,
+      dropDownItems: ["2", "3"],
     },
     {
       label: "No. of Bedrooms",
       placeholder: "Select no. of Bedrooms",
       id: 1,
+      dropDownItems: ["4", "5", "6"],
     },
   ];
   const rowThree = [
@@ -50,22 +64,20 @@ function PropertiesForm() {
           ))}
         </div>
         <div className="grid grid-cols-4 max-lg:grid-cols-1 gap-12.5 max-laptop:gap-7.5 max-lg:gap-5">
-          {rowTwo.map(({ label, placeholder, id }, i) => (
-            <FormInput
+          {rowTwo.map(({ label, placeholder, dropDownItems }, i) => (
+            <DropDownInput
               key={i}
               label={label}
               placeholder={placeholder}
-              id={id}
-              imageClass="max-laptop:w-5"
+              dropDownItems={dropDownItems}
             />
           ))}
         </div>
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-12.5 max-laptop:gap-7.5 max-lg:gap-5">
-          <FormInput
+          <DropDownInput
             label="Budget"
             placeholder="Select Budget"
-            imageClass="max-laptop:w-5"
-            id={1}
+            dropDownItems={["150,000", "220,000", "300,000"]}
           />
           <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
             {rowThree.map(({ label, placeholder, id }, i) => (
@@ -89,18 +101,7 @@ function PropertiesForm() {
             placeholder="Enter your Message here.."
           />
         </div>
-        <div className="flex justify-between items-center gap-12.5 max-sm:flex-col max-sm:gap-5">
-          <div className="flex-1 flex items-center gap-2.5 max-sm:gap-1.5">
-            <span className="inline-block w-7 aspect-square max-laptop:w-6 border border-gray-15 bg-gray-10 rounded-sm"></span>
-            <p className="gray_text">
-              I agree with <span className="underline">Terms of Use</span> and{" "}
-              <span className="underline">Privacy Policy</span>
-            </p>
-          </div>
-          <Button color="purple" className="max-sm:w-full text-center">
-            Send Your Message
-          </Button>
-        </div>
+        <FormAgree />
       </form>
     </section>
   );
